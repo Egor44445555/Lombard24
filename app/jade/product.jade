@@ -1,0 +1,261 @@
+html
+    title Samsung Galaxy Watch
+    include ./blocks/head.jade
+
+    body.main-page
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="/").breadcrumbs--item Главная
+                    a(href="#").breadcrumbs--item Каталог
+                    span.breadcrumbs--item Samsung Galaxy Watch
+
+                .row.mt-3.pt-3.mt-lg-3.pt-lg-4
+                    .col-12.col-lg-3
+                        form(action="#").form.search-block.search-catalog
+                            input(type="text" placeholder="Search").input
+                            button
+                                svg(class="icon icon-search")
+                                    use(xlink:href="#icon-search")
+
+                    .col-12.col-lg-9.mt-3.mt-lg-0
+                        .d-lg-flex.justify-content-between
+                            h3.title.pe-lg-3.ps-0 Samsung Galaxy Watch 46mm
+                            a(href="#").share.mt-3.mt-lg-0
+                                span.text Поделиться
+                                svg(class="icon icon-share")
+                                    use(xlink:href="#icon-share")
+
+                .row.mt-0.pt-0.mt-lg-3.pt-lg-2.flex-column-reverse.flex-lg-row
+                    .col-12.col-lg-3
+                        include ./blocks/filters.jade
+
+                    .col-12.col-lg-9.mt-3.mt-lg-0
+                        .row
+                            .col-12.col-lg-6.col-xxl-8
+                                .gallery-wrap
+                                    .marker IN GOOD CONDITION
+                                    .gallery-nav-wrap
+                                        .gallery-nav.js-gallery-nav
+                                            .swiper-wrapper
+                                                .swiper-slide
+                                                    img(src="../images/assets/product-preview.jpg")
+                                                .swiper-slide
+                                                    img(src="../images/assets/product-preview.jpg")
+                                                .swiper-slide
+                                                    img(src="../images/assets/product-preview.jpg")
+                                                .swiper-slide
+                                                    img(src="../images/assets/product-preview.jpg")
+                                                .swiper-slide
+                                                    img(src="../images/assets/product-preview.jpg")
+                                                .swiper-slide
+                                                    img(src="../images/assets/product-preview.jpg")
+                                        .swiper-button-next
+                                        .swiper-button-prev
+
+                                    .gallery.js-gallery
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                img(src="../images/assets/product.jpg")
+                                            .swiper-slide
+                                                img(src="../images/assets/product.jpg")
+                                            .swiper-slide
+                                                img(src="../images/assets/product.jpg")
+                                            .swiper-slide
+                                                img(src="../images/assets/product.jpg")
+                                            .swiper-slide
+                                                img(src="../images/assets/product.jpg")
+                                            .swiper-slide
+                                                img(src="../images/assets/product.jpg")
+
+                                .tabs.mt-4.pt-3
+                                    .tabs-head
+                                        .tabs-head--item(data-tab="Как купить?").active Как купить?
+                                        .tabs-head--item(data-tab="Test") Test
+
+                                    .tabs-body
+                                        .tabs-body--item(data-tab="Как купить?").active
+                                            h4 Как можно купить вещи у Lombard24.ee?
+                                            p Купить вещи можно в представительстве Lombard24.ee по адресу Maneezi 1 или Kari 1.
+
+                                            h4 Что происходит, если у купленной вещи обнаруживается техническая неполадка?
+                                            p Перед покупкой товара Вы можете тщательно его проверить.
+                                                | Если у вещи имеется техническая неполадка или она не соответствует другим ранее описанным качествам, то мы возвращаем Вам потраченные деньги.
+                                                | Последующие жалобы рассматриваются не позднее 24 часов с момента покупки.
+
+                                        .tabs-body--item(data-tab="Test") Test
+
+                            .col-12.col-lg-6.col-xxl-4.mt-2.pt-3.mt-lg-0.pt-lg-0
+                                .product-control
+                                    .price-list
+                                        .price-list--item
+                                            .label Price in local store:
+                                            .value 200€
+                                        .price-list--item
+                                            .label Price in Lombard24:
+                                            .value.bold 80€
+                                        .price-list--item
+                                            .label You save:
+                                            .value 120€ (70%)
+
+                                    .button-wrap
+                                        button(type="submit").btn.btn-green
+                                            .text Add to cart
+                                            svg(class="icon icon-cart-add")
+                                                use(xlink:href="#icon-cart-add")
+                                        a(href="#").btn.btn-green.btn-empty Оформить заказ
+
+                                    .delivery-info
+                                        .delivery-info--item
+                                            svg(class="icon icon-location-stroke")
+                                                use(xlink:href="#icon-location-stroke")
+                                            .text Забрать данный товар вы можете по адресу Põhja-Tallinn
+                                        .delivery-info--item
+                                            svg(class="icon icon-search")
+                                                use(xlink:href="#icon-search")
+                                            a(href="#").text Search on Google
+
+                                    h4.title Краткие характеристики
+
+                                    .characteristics-list
+                                        .characteristics-list--item
+                                            .label Цвет
+                                            .value Черный
+                                        .characteristics-list--item
+                                            .label Бренд
+                                            .value Samsung
+                                        .characteristics-list--item
+                                            .label Модель
+                                            .value Galaxy Watch 46mm
+
+                                        .more-btn Смотреть еще
+
+                                .banners.small
+                                    .wrap
+                                        a(href="#" style="background-image: url('../images/assets/banner-green.jpg')").banners--item.text-white
+                                            span.title Продать вещи и получить деньги
+                                            span.btn.btn-white.link
+                                                span.text Узнать как
+                                                svg(class="icon icon-arrow")
+                                                    use(xlink:href="#icon-arrow")
+                                        a(href="#" style="background-image: url('../images/assets/banner.jpg')").banners--item
+                                            span.title Заложить вещи и получить деньги
+                                            span.btn.btn-white.link
+                                                span.text Узнать как
+                                                svg(class="icon icon-arrow")
+                                                    use(xlink:href="#icon-arrow")
+
+                        h3.mt-3.pt-4.mt-lg-5 Похожие товары
+
+                        .similar-products.mt-2.pt-4.mt-lg-4.js-slider-list
+                            .swiper-wrapper
+                                .swiper-slide
+                                    form(action="#").product-item
+                                        .marker.green NEW
+
+                                        .image
+                                            img(src="../images/assets/product-item.jpg")
+                                        .title Platinet wireless headset Sport PM1085
+
+                                        .row.align-items-center
+                                            .col-6
+                                                .availabel.text-nowrap в магазине
+                                                .old-cost 120€
+                                            .col-6.position-relative
+                                                .cost 70€
+                                                button.buy-btn Add to cart
+                                        .location
+                                            svg(class="icon icon-location-stroke")
+                                                use(xlink:href="#icon-location-stroke")
+                                            .text Põhja-Tallinn
+                                .swiper-slide
+                                    form(action="#").product-item
+                                        .marker.green NEW
+
+                                        .image
+                                            img(src="../images/assets/product-item.jpg")
+                                        .title Platinet wireless headset Sport PM1085
+
+                                        .row.align-items-center
+                                            .col-6
+                                                .availabel.text-nowrap в магазине
+                                                .old-cost 120€
+                                            .col-6.position-relative
+                                                .cost 70€
+                                                button.buy-btn Add to cart
+                                        .location
+                                            svg(class="icon icon-location-stroke")
+                                                use(xlink:href="#icon-location-stroke")
+                                            .text Põhja-Tallinn
+                                .swiper-slide
+                                    form(action="#").product-item
+                                        .marker.green NEW
+
+                                        .image
+                                            img(src="../images/assets/product-item.jpg")
+                                        .title Platinet wireless headset Sport PM1085
+
+                                        .row.align-items-center
+                                            .col-6
+                                                .availabel.text-nowrap в магазине
+                                                .old-cost 120€
+                                            .col-6.position-relative
+                                                .cost 70€
+                                                button.buy-btn Add to cart
+                                        .location
+                                            svg(class="icon icon-location-stroke")
+                                                use(xlink:href="#icon-location-stroke")
+                                            .text Põhja-Tallinn
+                                .swiper-slide
+                                    form(action="#").product-item
+                                        .marker.green NEW
+
+                                        .image
+                                            img(src="../images/assets/product-item.jpg")
+                                        .title Platinet wireless headset Sport PM1085
+
+                                        .row.align-items-center
+                                            .col-6
+                                                .availabel.text-nowrap в магазине
+                                                .old-cost 120€
+                                            .col-6.position-relative
+                                                .cost 70€
+                                                button.buy-btn Add to cart
+                                        .location
+                                            svg(class="icon icon-location-stroke")
+                                                use(xlink:href="#icon-location-stroke")
+                                            .text Põhja-Tallinn
+                                .swiper-slide
+                                    form(action="#").product-item
+                                        .marker.green NEW
+
+                                        .image
+                                            img(src="../images/assets/product-item.jpg")
+                                        .title Platinet wireless headset Sport PM1085
+
+                                        .row.align-items-center
+                                            .col-6
+                                                .availabel.text-nowrap в магазине
+                                                .old-cost 120€
+                                            .col-6.position-relative
+                                                .cost 70€
+                                                button.buy-btn Add to cart
+                                        .location
+                                            svg(class="icon icon-location-stroke")
+                                                use(xlink:href="#icon-location-stroke")
+                                            .text Põhja-Tallinn
+
+                            .swiper-button-next
+                            .swiper-button-prev
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
+
+
+
+
+

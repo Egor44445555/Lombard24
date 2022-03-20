@@ -1,0 +1,113 @@
+html
+    title Кабинет
+    include ./blocks/head.jade
+
+    body.main-page
+        include ./blocks/header.jade
+
+        .wrapper
+            .alert-block.text-center.text-white(style="background-image: url(../images/alert-bg.png)") Добро пожаловать в личный кабинет, Александр Александров!
+
+            .container-block
+                .cabinet-block
+                    h2.cabinet-title.text-center Личный кабинет
+                    .cabinet-description.text-center Разверните вкладку с договором, чтобы онлайн: выкупить залог, заказать отсрочку и прочее
+
+                    .settings-list.spoiler
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon
+                                    svg(class="icon-treaties")
+                                        use(xlink:href="#icon-treaties")
+                                .text
+                                    .title Договоры
+                                    .description Дата заключения и продления, срок действия и т.д
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.red
+                                    svg(class="icon-bell")
+                                        use(xlink:href="#icon-bell")
+                                .text
+                                    .title Сообщить об опоздании
+                                    .description Способы получения отсрочки
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.green
+                                    svg(class="icon-scales")
+                                        use(xlink:href="#icon-scales")
+                                .text
+                                    .title Заложить товар
+                                    .description Не надо идти в ломбард, чтобы узнать сколько денег мы можем Вам предложить.
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.purple-dark
+                                    svg(class="icon-clock-extended")
+                                        use(xlink:href="#icon-clock-extended")
+                                .text
+                                    .title Продлить договор
+                                    .description Вы можете продлить договор банковским переводом
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.yellow
+                                    svg(class="icon-sale-bag")
+                                        use(xlink:href="#icon-sale-bag")
+                                .text
+                                    .title Продать товар
+                                    .description Подайте заявку на оценку и продажу ваших вещей.
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.orange
+                                    svg(class="icon-price-extended")
+                                        use(xlink:href="#icon-price-extended")
+                                .text
+                                    .title Выкупить залог
+                                    .description Вы можете выкупить залог банковским переводом
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.purple
+                                    svg(class="icon-power-attorney")
+                                        use(xlink:href="#icon-power-attorney")
+                                .text
+                                    .title Оформить доверенность
+                                    .description Если Вы не можете забрать залог самостоятельно, то Вы можете оформить
+                                        | доверенность на другого человека.
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.black
+                                    svg(class="icon-terminate-fill")
+                                        use(xlink:href="#icon-terminate-fill")
+                                .text
+                                    .title Отказаться от залога раньше времени
+
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
+
+
+
+
+
