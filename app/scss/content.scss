@@ -637,6 +637,14 @@
         background: $white;
         box-shadow: 1px 1px 30px rgba(0, 0, 0, .05);
         border-radius: 20px;
+
+        &.active {
+
+            .arrow svg {
+                transform: rotate(180deg);
+                stroke: $yellow;
+            }
+        }
     }
 
     &--item-head {
@@ -690,6 +698,10 @@
             }
         }
 
+        .text {
+            flex: 1;
+        }
+
         .title {
             font-family: $font-base-bold;
             font-size: 22px;
@@ -703,10 +715,219 @@
             line-height: 22px;
             color: $placeholderColor;
         }
+
+        .arrow {
+            margin-right: 24px;
+
+            svg {
+                width: 15px;
+                height: 11px;
+                transform: rotate(0deg);
+                fill: none;
+                stroke: $placeholderColor;
+            }
+        }
     }
 
     &--item-body {
         padding: 0 30px 30px;
+    }
+}
+
+.treaties-spoiler {
+
+    &--item {
+        margin-top: 20px;
+        padding: 20px 26px 20px 24px;
+        background: $grayLightBg;
+        border-radius: 20px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &--head {
+        display: flex;
+        align-items: flex-start;
+
+        .arrow svg {
+            width: 13px;
+            height: 8px;
+            fill: none;
+            stroke: $grayDarkIcon;
+        }
+
+        &.active {
+
+            .treaties-spoiler--body {
+                display: block;
+            }
+        }
+    }
+
+    .treaties-list-arrow {
+        padding-left: 10px;
+        cursor: pointer;
+
+        svg {
+            width: 14px;
+            height: 9px;
+            fill: none;
+            stroke: $grayDarkIcon;
+        }
+    }
+
+    &--body {
+        display: none;
+    }
+
+    .download {
+        display: inline-block;
+        margin-top: -30px;
+        font-family: $font-base-semiBold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $black;
+        border-bottom: 1px solid $black;
+    }
+}
+
+.treaties-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-top: -20px;
+
+    &--item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex: 100%;
+        max-width: 33.333%;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        margin-right: 10px;
+        border: 1px solid $borderColor;
+        border-radius: 7px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $grayDarkIcon;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + .icon {
+        opacity: 1;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 12px;
+        height: 12px;
+        min-width: 12px;
+        margin-left: 6px;
+        border: 1px solid $red;
+        border-radius: 50%;
+        opacity: 0;
+
+        &:before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: $red;
+            border-radius: 50%;
+        }
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.inner-settings-list {
+    margin-top: 30px;
+
+    &--item {
+        margin-top: 20px;
+        cursor: pointer;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &--head {
+        display: flex;
+        align-items: center;
+        font-family: $font-base-semiBold;
+        font-size: 18px;
+        line-height: 22px;
+        color: $green;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .text {
+            border-bottom: 1px solid $green;
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            fill: none;
+            stroke: $green;
+        }
+    }
+
+    &--body {
+        display: none;
+    }
+
+    .btn {
+        border-radius: 9px;
+    }
+}
+
+.postponement-block {
+    margin-top: 30px;
+
+    .datepicker-wrap {
+        flex: 1;
+        max-width: 240px;
+        margin-right: 20px;
+    }
+
+    .btn {
+        flex: 1;
+        max-width: 166px;
+        margin-right: 20px;
+    }
+
+    .text {
+        flex: 1;
     }
 }
 

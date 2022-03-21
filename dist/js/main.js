@@ -243,10 +243,6 @@ $(document).ready(function() {
 
     let spoilerItemHead = $('.spoiler--head');
     let spoilerItem = $('.spoiler--item');
-    let treatiesListBtn = $('.treaties-list-arrow');
-    let treatiesListItem = $('.treaties-spoiler--item');
-    let innerSettingsListItem = $('.inner-settings-list--item');
-    let innerSettingsListBtn = $('.inner-settings-list--head');
 
     spoilerItemHead.on("click", function () {
         $(this).parent().toggleClass('active');
@@ -267,46 +263,6 @@ $(document).ready(function() {
             spoilerItem.removeClass('active');
             $(this).parent().addClass('active');
             $(this).parent().find('.spoiler--body').slideDown();
-        }
-    });
-
-    treatiesListBtn.on('click', function () {
-        $(this).parents('.treaties-spoiler--item').toggleClass('active');
-
-        treatiesListItem.each(function () {
-
-            if (!$(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).find('.treaties-spoiler--body').slideUp();
-            }
-        });
-
-        if (!$(this).parents('.treaties-spoiler--item').hasClass('active')) {
-            $(this).parents('.treaties-spoiler--item').find('.treaties-spoiler--body').slideUp();
-            $(this).parents('.treaties-spoiler--item').removeClass('active');
-        } else {
-            $(this).parents('.treaties-spoiler--item').addClass('active');
-            $(this).parents('.treaties-spoiler--item').find('.treaties-spoiler--body').slideDown();
-        }
-    });
-
-    innerSettingsListBtn.on('click', function () {
-        $(this).parents('.inner-settings-list--item').toggleClass('active');
-
-        treatiesListItem.each(function () {
-
-            if (!$(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).find('.inner-settings-list--body').slideUp();
-            }
-        });
-
-        if (!$(this).parents('.inner-settings-list--item').hasClass('active')) {
-            $(this).parents('.inner-settings-list--item').find('.inner-settings-list--body').slideUp();
-            $(this).parents('.inner-settings-list--item').removeClass('active');
-        } else {
-            $(this).parents('.inner-settings-list--item').addClass('active');
-            $(this).parents('.inner-settings-list--item').find('.inner-settings-list--body').slideDown();
         }
     });
 

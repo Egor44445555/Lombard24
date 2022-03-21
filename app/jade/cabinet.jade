@@ -22,8 +22,185 @@ html
                                 .text
                                     .title Договоры
                                     .description Дата заключения и продления, срок действия и т.д
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
-                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            .settings-list--item-body.spoiler--body
+                                .treaties-spoiler
+                                    .treaties-spoiler--item
+                                        .treaties-spoiler--head
+                                            .treaties-list
+                                                label(for="radio").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-pen")
+                                                            use(xlink:href="#icon-pen")
+                                                    .text Договор&nbsp;
+                                                        b 123694
+                                                    input(type="radio" id="radio" name="checkbox")
+                                                    .icon
+                                                label(for="radio2").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-calendar")
+                                                            use(xlink:href="#icon-calendar")
+                                                    .text Заключен&nbsp;
+                                                        b 02.02.22 г
+                                                    input(type="radio" id="radio2" name="checkbox")
+                                                    .icon
+                                                label(for="radio3").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-clock-circle")
+                                                            use(xlink:href="#icon-clock-circle")
+                                                    .text Срок договора&nbsp;
+                                                        b 02.01.23 г
+                                                    input(type="radio" id="radio3" name="checkbox")
+                                                    .icon
+
+                                            .treaties-list-arrow
+                                                svg(class="icon-arrow-angle-bold")
+                                                    use(xlink:href="#icon-arrow-angle-bold")
+
+                                        .treaties-spoiler--body
+                                            .inner-settings-list
+                                                .inner-settings-list--item
+                                                    .inner-settings-list--head
+                                                        svg(class="icon icon-bell")
+                                                            use(xlink:href="#icon-bell")
+                                                        .text Сообщить об опоздании
+                                                        svg(class="arrow icon-arrow-angle-bold")
+                                                            use(xlink:href="#icon-arrow-angle-bold")
+
+                                                    .inner-settings-list--body
+                                                        .semibold Выберите желаемую дату отсрочки:
+
+                                                .inner-settings-list--item
+                                                    .inner-settings-list--head
+                                                        svg(class="icon icon-clock-extended")
+                                                            use(xlink:href="#icon-clock-extended")
+                                                        .text Продлить договор
+                                                        svg(class="arrow icon-arrow-angle-bold")
+                                                            use(xlink:href="#icon-arrow-angle-bold")
+
+                                                    .inner-settings-list--body
+                                                        .semibold Выберите на какой срок хотите продлить договор:
+
+                                                .inner-settings-list--item
+                                                    .inner-settings-list--head
+                                                        svg(class="icon icon-price-extended")
+                                                            use(xlink:href="#icon-price-extended")
+                                                        .text Выкупить залог
+                                                        svg(class="arrow icon-arrow-angle-bold")
+                                                            use(xlink:href="#icon-arrow-angle-bold")
+
+                                                    .inner-settings-list--body
+                                                        .semibold Выберите желаемую дату отсрочки:
+
+                                            .text-end
+                                                a(href="#").download Скачать PDF файл договора
+
+                                    .treaties-spoiler--item
+                                        .treaties-spoiler--head
+                                            .treaties-list
+                                                label(for="radio4").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-pen")
+                                                            use(xlink:href="#icon-pen")
+                                                    .text Договор&nbsp;
+                                                        b 123694
+                                                    input(type="radio" id="radio4" name="checkbox")
+                                                    .icon
+                                                label(for="radio5").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-calendar")
+                                                            use(xlink:href="#icon-calendar")
+                                                    .text Заключен&nbsp;
+                                                        b 02.02.22 г
+                                                    input(type="radio" id="radio5" name="checkbox")
+                                                    .icon
+                                                label(for="radio6").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-clock-circle")
+                                                            use(xlink:href="#icon-clock-circle")
+                                                    .text Срок договора&nbsp;
+                                                        b 02.01.23 г
+                                                    input(type="radio" id="radio6" name="checkbox")
+                                                    .icon
+                                                label(for="radio7").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-euro")
+                                                            use(xlink:href="#icon-euro")
+                                                    .text Получено&nbsp;
+                                                        b 125€
+                                                    input(type="radio" id="radio7" name="checkbox")
+                                                    .icon
+                                                label(for="radio8").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-clock-extended")
+                                                            use(xlink:href="#icon-clock-extended")
+                                                    .text Цена продления&nbsp;
+                                                        b 20€
+                                                    input(type="radio" id="radio8" name="checkbox")
+                                                    .icon
+                                                label(for="radio9").treaties-list--item
+                                                    .image
+                                                        svg(class="icon-price-extended")
+                                                            use(xlink:href="#icon-price-extended")
+                                                    .text Цена выкупа&nbsp;
+                                                        b 135€
+                                                    input(type="radio" id="radio9" name="checkbox")
+                                                    .icon
+
+                                            .treaties-list-arrow
+                                                svg(class="icon-arrow-angle-bold")
+                                                    use(xlink:href="#icon-arrow-angle-bold")
+
+                                        .treaties-spoiler--body
+                                            .inner-settings-list
+                                                .inner-settings-list--item
+                                                    .inner-settings-list--head
+                                                        svg(class="icon icon-bell")
+                                                            use(xlink:href="#icon-bell")
+                                                        .text Сообщить об опоздании
+                                                        svg(class="arrow icon-arrow-angle-bold")
+                                                            use(xlink:href="#icon-arrow-angle-bold")
+
+                                                    .inner-settings-list--body
+                                                        .postponement-block
+                                                            .label.semibold Выберите желаемую дату отсрочки:
+
+                                                            .d-flex.align-items-center.mt-3.pt-1
+                                                                .datepicker-wrap
+                                                                    input.datepicker(type="text" placeholder="Выберите дату")
+                                                                    svg(class="icon icon-calendar")
+                                                                        use(xlink:href="#icon-calendar")
+                                                                .btn.btn-yellow Пересчитать
+                                                                .text Сообщите нам, если хотите получить отсрочку на на более длительный срок
+
+                                                .inner-settings-list--item
+                                                    .inner-settings-list--head
+                                                        svg(class="icon icon-clock-extended")
+                                                            use(xlink:href="#icon-clock-extended")
+                                                        .text Продлить договор
+                                                        svg(class="arrow icon-arrow-angle-bold")
+                                                            use(xlink:href="#icon-arrow-angle-bold")
+
+                                                    .inner-settings-list--body
+                                                        .semibold Выберите на какой срок хотите продлить договор:
+
+                                                .inner-settings-list--item
+                                                    .inner-settings-list--head
+                                                        svg(class="icon icon-price-extended")
+                                                            use(xlink:href="#icon-price-extended")
+                                                        .text Выкупить залог
+                                                        svg(class="arrow icon-arrow-angle-bold")
+                                                            use(xlink:href="#icon-arrow-angle-bold")
+
+                                                    .inner-settings-list--body
+                                                        .semibold Выберите желаемую дату отсрочки:
+
+                                            .text-end
+                                                a(href="#").download Скачать PDF файл договора
+
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
@@ -33,6 +210,9 @@ html
                                 .text
                                     .title Сообщить об опоздании
                                     .description Способы получения отсрочки
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -44,6 +224,9 @@ html
                                 .text
                                     .title Заложить товар
                                     .description Не надо идти в ломбард, чтобы узнать сколько денег мы можем Вам предложить.
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -55,6 +238,9 @@ html
                                 .text
                                     .title Продлить договор
                                     .description Вы можете продлить договор банковским переводом
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -66,6 +252,9 @@ html
                                 .text
                                     .title Продать товар
                                     .description Подайте заявку на оценку и продажу ваших вещей.
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -77,6 +266,9 @@ html
                                 .text
                                     .title Выкупить залог
                                     .description Вы можете выкупить залог банковским переводом
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -89,6 +281,9 @@ html
                                     .title Оформить доверенность
                                     .description Если Вы не можете забрать залог самостоятельно, то Вы можете оформить
                                         | доверенность на другого человека.
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -99,6 +294,9 @@ html
                                         use(xlink:href="#icon-terminate-fill")
                                 .text
                                     .title Отказаться от залога раньше времени
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 

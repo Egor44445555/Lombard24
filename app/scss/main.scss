@@ -98,6 +98,20 @@ body {
     }
 }
 
+.btn-yellow {
+    background: $yellow;
+    color: $white;
+
+    &:hover {
+        background: $yellow;
+        color: $white;
+    }
+
+    svg {
+        fill: $white;
+    }
+}
+
 .btn-empty {
     background: none;
     border: 2px solid;
@@ -212,6 +226,15 @@ img {
 
 .dashed {
     border-bottom: 1px dashed;
+}
+
+.semibold {
+    font-family: $font-base-semiBold;
+}
+
+b,
+strong {
+    font-family: $font-base-bold;
 }
 
 h1,
@@ -1117,6 +1140,34 @@ select {
 }
 
 /*** End Breadcrumbs ***/
+
+
+/*** Datepicker ***/
+
+.datepicker-wrap {
+    position: relative;
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        fill: $grayDarkIcon;
+    }
+
+    input {
+        max-width: 100%;
+        height: 50px;
+        padding: 5px 50px 5px 16px;
+        background: $white;
+        border: 1px solid $borderColor;
+        border-radius: 9px;
+    }
+}
+
+/*** End Datepicker ***/
 
 
 @import '_header.scss',
