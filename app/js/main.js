@@ -245,7 +245,6 @@ $(document).ready(function() {
     let spoilerItem = $('.spoiler--item');
     let treatiesListBtn = $('.treaties-list-arrow');
     let treatiesListItem = $('.treaties-spoiler--item');
-    let innerSettingsListItem = $('.inner-settings-list--item');
     let innerSettingsListBtn = $('.inner-settings-list--head');
 
     spoilerItemHead.on("click", function () {
@@ -307,6 +306,18 @@ $(document).ready(function() {
         } else {
             $(this).parents('.inner-settings-list--item').addClass('active');
             $(this).parents('.inner-settings-list--item').find('.inner-settings-list--body').slideDown();
+        }
+    });
+
+    $('.spoiler-one--head').on('click', function () {
+        $(this).parent().toggleClass('active');
+
+        if (!$(this).parent().hasClass('active')) {
+            $(this).parent().find('.spoiler-one--body').slideUp();
+            $(this).parent().removeClass('active');
+        } else {
+            $(this).parent().addClass('active');
+            $(this).parent().find('.spoiler-one--body').slideDown();
         }
     });
 

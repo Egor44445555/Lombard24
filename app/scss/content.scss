@@ -745,6 +745,13 @@
         &:first-child {
             margin-top: 0;
         }
+
+        &.active {
+
+            .treaties-list-arrow svg {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &--head {
@@ -864,14 +871,20 @@
 }
 
 .inner-settings-list {
-    margin-top: 30px;
+    margin-top: 26px;
 
     &--item {
-        margin-top: 20px;
-        cursor: pointer;
+        margin-top: 26px;
 
         &:first-child {
             margin-top: 0;
+        }
+
+        &.active {
+
+            .inner-settings-list--head .arrow {
+                transform: rotate(180deg);
+            }
         }
     }
 
@@ -882,6 +895,7 @@
         font-size: 18px;
         line-height: 22px;
         color: $green;
+        cursor: pointer;
 
         .icon {
             width: 20px;
@@ -894,8 +908,8 @@
         }
 
         .arrow {
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 10px;
             margin-left: 10px;
             fill: none;
             stroke: $green;
@@ -907,6 +921,8 @@
     }
 
     .btn {
+        width: 100%;
+        max-width: 166px;
         border-radius: 9px;
     }
 }
@@ -928,6 +944,196 @@
 
     .text {
         flex: 1;
+        font-family: $font-base-medium;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration-line: underline;
+        color: $textGray;
+    }
+}
+
+.renew-contract-block {
+    margin-top: 30px;
+
+    .info-text {
+        max-width: 388px;
+        margin-top: 20px;
+        font-family: $font-base-medium;
+        font-size: 12px;
+        line-height: 20px;
+        color: $placeholderColor;
+    }
+
+    .total-cost {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .label {
+            margin-right: 10px;
+            font-family: $font-base-medium;
+            color: $textGray;
+        }
+
+        .cost {
+            font-family: $font-base-bold;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        .hint {
+            margin-left: 10px;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                min-width: 20px;
+            }
+        }
+    }
+
+    .spoiler-one {
+        margin-top: 25px;
+
+        &--head {
+            display: flex;
+            align-items: center;
+            font-family: $font-base-medium;
+            text-decoration-line: underline;
+            cursor: pointer;
+
+            .icon {
+                width: 11px;
+                height: 7px;
+                margin-left: 10px;
+                fill: none;
+                stroke: $black;
+                transform: rotate(180deg);
+            }
+        }
+
+        &--body {
+            display: none;
+        }
+
+        &.active {
+
+            .spoiler-one--head .icon {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .list {
+        margin-top: 25px;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 17px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            .text {
+
+                b,
+                strong {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .icon {
+            width: 17px;
+            height: 12px;
+            min-width: 13px;
+            margin-right: 10px;
+            fill: $yellow;
+        }
+
+        .hint {
+            margin-left: 10px;
+
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.payment-block {
+    margin-top: 37px;
+}
+
+.payment-list {
+    margin-top: 20px;
+
+    &--item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        cursor: pointer;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + .icon:before {
+        opacity: 1;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        background: $white;
+        border-radius: 3px;
+
+        &:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: $yellow;
+            border-radius: 3px;
+            opacity: 0;
+        }
+    }
+
+    .text {
+        padding-right: 30px;
+    }
+
+    .cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        margin: -10px 0 0 -10px;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 64px;
+            height: 40px;
+            margin: 10px 0 0 10px;
+            padding: 12px 8px;
+            border: 1px solid $borderColor;
+            border-radius: 7px;
+        }
     }
 }
 
