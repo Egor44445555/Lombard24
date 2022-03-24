@@ -56,6 +56,7 @@ $(document).ready(function() {
         mobileMenu.removeClass('open');
     });
 
+    $('.fancybox').fancybox();
 
     tooltip.tooltip({
         html: true,
@@ -243,12 +244,19 @@ $(document).ready(function() {
 
     let spoilerItemHead = $('.spoiler--head');
     let spoilerItem = $('.spoiler--item');
-    let treatiesListBtn = $('.treaties-list-arrow');
-    let treatiesListItem = $('.treaties-spoiler--item');
+    let grayBlockBtn = $('.gray-block-arrow');
+    let treatiesListItem = $('.gray-block-spoiler--item');
     let innerSettingsListBtn = $('.inner-settings-list--head');
 
     spoilerItemHead.on("click", function () {
         $(this).parent().toggleClass('active');
+
+        setTimeout(() => {
+
+            $('html, body').animate({
+                scrollTop: $(this).offset().top - 100
+            }, 100);
+        }, 300);
 
         spoilerItem.each(function () {
 
@@ -269,23 +277,23 @@ $(document).ready(function() {
         }
     });
 
-    treatiesListBtn.on('click', function () {
-        $(this).parents('.treaties-spoiler--item').toggleClass('active');
+    grayBlockBtn.on('click', function () {
+        $(this).parents('.gray-block-spoiler--item').toggleClass('active');
 
         treatiesListItem.each(function () {
 
             if (!$(this).hasClass('active')) {
                 $(this).removeClass('active');
-                $(this).find('.treaties-spoiler--body').slideUp();
+                $(this).find('.gray-block-spoiler--body').slideUp();
             }
         });
 
-        if (!$(this).parents('.treaties-spoiler--item').hasClass('active')) {
-            $(this).parents('.treaties-spoiler--item').find('.treaties-spoiler--body').slideUp();
-            $(this).parents('.treaties-spoiler--item').removeClass('active');
+        if (!$(this).parents('.gray-block-spoiler--item').hasClass('active')) {
+            $(this).parents('.gray-block-spoiler--item').find('.gray-block-spoiler--body').slideUp();
+            $(this).parents('.gray-block-spoiler--item').removeClass('active');
         } else {
-            $(this).parents('.treaties-spoiler--item').addClass('active');
-            $(this).parents('.treaties-spoiler--item').find('.treaties-spoiler--body').slideDown();
+            $(this).parents('.gray-block-spoiler--item').addClass('active');
+            $(this).parents('.gray-block-spoiler--item').find('.gray-block-spoiler--body').slideDown();
         }
     });
 
@@ -504,16 +512,13 @@ $(document).ready(function() {
     $('.custom-select').each(function () {
         let classes = $(this).attr('class');
         let template = '<div class="' + classes + '">';
-        template += '<span class="custom-select-trigger">' + $(this).attr('placeholder') + '</span>';
+        template += '<span class="custom-select-trigger">' + $(this).attr('placeholder') + '<svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg></span>';
         
         template += '<div class="custom-options">';
         $(this).find('option')
             .each(function () {
                 let data = $(this).attr("value");
-                let icon;
-                let title;
                 let templateCity = '';
-                let dataText = '';
 
                 template +=
                     '<span class="custom-option">' +
@@ -554,7 +559,7 @@ $(document).ready(function() {
 
         template +=
             '<span class="wrap">' +
-                '<span class="text">' + valueSelect + '</span>' +
+                '<span class="text">' + valueSelect + '<svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg></span></span>' +
             '</span>'
 
         $(this).parents('.custom-select-wrapper').find('select').val(valueSelect);
@@ -563,7 +568,5 @@ $(document).ready(function() {
         $(this).parents('.custom-select').removeClass('opened');
         $(this).parents('.custom-select').find('.custom-select-trigger').html(template).addClass('added');
     });
-
-    $('.fancybox').fancybox();
 });
 

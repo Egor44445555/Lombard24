@@ -559,6 +559,7 @@
         padding: 0 0 13px;
         background: none;
         color: $white;
+        border: 0;
         border-bottom: 2px solid $white;
         border-radius: 0;
 
@@ -691,6 +692,10 @@
                 background: $blackSoft;
             }
 
+            &.blue-light {
+                background: $blueLight;
+            }
+
             svg {
                 width: 40px;
                 height: 40px;
@@ -732,13 +737,223 @@
     &--item-body {
         padding: 0 30px 30px;
     }
+
+    .gray-block {
+        padding: 30px 40px 50px 30px;
+        background: $grayLightBg;
+        border-radius: 20px;
+    }
+
+    .custom-select-wrapper {
+        max-width: 230px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 166px;
+        border-radius: 9px;
+    }
+
+    .info-text {
+        max-width: 388px;
+        margin-top: 20px;
+        font-family: $font-base-medium;
+        font-size: 12px;
+        line-height: 20px;
+        color: $placeholderColor;
+    }
+
+    .total-cost {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .label {
+            margin-right: 10px;
+            font-family: $font-base-medium;
+            color: $textGray;
+        }
+
+        .cost {
+            font-family: $font-base-bold;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        .hint {
+            margin-left: 10px;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                min-width: 20px;
+            }
+        }
+    }
+
+    .spoiler-one {
+        margin-top: 25px;
+
+        &--head {
+            display: flex;
+            align-items: center;
+            font-family: $font-base-medium;
+            text-decoration-line: underline;
+            cursor: pointer;
+
+            .icon {
+                width: 11px;
+                height: 7px;
+                margin-left: 10px;
+                fill: none;
+                stroke: $black;
+                transform: rotate(180deg);
+            }
+        }
+
+        &--body {
+            display: none;
+        }
+
+        &.active {
+
+            .spoiler-one--head .icon {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .list {
+        margin-top: 25px;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 17px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            .text {
+
+                b,
+                strong {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .icon {
+            width: 17px;
+            height: 12px;
+            min-width: 13px;
+            margin-right: 10px;
+            fill: $yellow;
+        }
+
+        .hint {
+            margin-left: 10px;
+
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .contacts {
+
+        .gray-block-spoiler--item {
+            margin-top: 15px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .gray-block-spoiler--head .title {
+            display: flex;
+            flex-wrap: wrap;
+
+            .icon {
+                width: 20px;
+                height: 22px;
+                fill: $black;
+                margin-right: 10px;
+            }
+
+            .description {
+                flex: 100%;
+                margin-top: 10px;
+                padding-left: 30px;
+                font-size: 14px;
+            }
+        }
+
+        .gray-block-spoiler--body {
+            padding-left: 30px;
+        }
+
+        .input-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 25px;
+
+            .label {
+                flex: 100%;
+                margin-bottom: 12px;
+                font-family: $font-base-medium;
+                font-size: 14px;
+                line-height: 17px;
+                color: $placeholderColor;
+            }
+        }
+
+        .edit-input-wrap {
+            display: flex;
+            align-items: center;
+        }
+
+        .edit {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            font-family: $font-base-semiBold;
+            font-size: 14px;
+            line-height: 17px;
+            color: $green;
+            cursor: pointer;
+
+            .icon {
+                width: 16px;
+                height: 18px;
+                min-width: 16px;
+                fill: $green;
+                margin-right: 10px;
+            }
+        }
+
+        .location-input {
+            height: 50px;
+            background: none;
+            font-family: $font-base-medium;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration-line: underline;
+            color: $black;
+            border: 0;
+        }
+    }
 }
 
-.treaties-spoiler {
+.gray-block-spoiler {
 
     &--item {
         margin-top: 20px;
-        padding: 20px 26px 20px 24px;
+        padding: 20px 24px;
         background: $grayLightBg;
         border-radius: 20px;
 
@@ -748,7 +963,7 @@
 
         &.active {
 
-            .treaties-list-arrow svg {
+            .gray-block-arrow svg {
                 transform: rotate(180deg);
             }
         }
@@ -757,6 +972,7 @@
     &--head {
         display: flex;
         align-items: flex-start;
+        justify-content: space-between;
 
         .arrow svg {
             width: 13px;
@@ -767,13 +983,13 @@
 
         &.active {
 
-            .treaties-spoiler--body {
+            .gray-block-spoiler--body {
                 display: block;
             }
         }
     }
 
-    .treaties-list-arrow {
+    .gray-block-arrow {
         padding-left: 10px;
         cursor: pointer;
 
@@ -918,17 +1134,11 @@
 
     &--body {
         display: none;
-    }
-
-    .btn {
-        width: 100%;
-        max-width: 166px;
-        border-radius: 9px;
+        margin-top: 30px;
     }
 }
 
 .postponement-block {
-    margin-top: 30px;
 
     .datepicker-wrap {
         flex: 1;
@@ -952,120 +1162,6 @@
     }
 }
 
-.renew-contract-block {
-    margin-top: 30px;
-
-    .info-text {
-        max-width: 388px;
-        margin-top: 20px;
-        font-family: $font-base-medium;
-        font-size: 12px;
-        line-height: 20px;
-        color: $placeholderColor;
-    }
-
-    .total-cost {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-
-        .label {
-            margin-right: 10px;
-            font-family: $font-base-medium;
-            color: $textGray;
-        }
-
-        .cost {
-            font-family: $font-base-bold;
-            font-size: 22px;
-            line-height: 27px;
-        }
-
-        .hint {
-            margin-left: 10px;
-
-            .icon {
-                width: 20px;
-                height: 20px;
-                min-width: 20px;
-            }
-        }
-    }
-
-    .spoiler-one {
-        margin-top: 25px;
-
-        &--head {
-            display: flex;
-            align-items: center;
-            font-family: $font-base-medium;
-            text-decoration-line: underline;
-            cursor: pointer;
-
-            .icon {
-                width: 11px;
-                height: 7px;
-                margin-left: 10px;
-                fill: none;
-                stroke: $black;
-                transform: rotate(180deg);
-            }
-        }
-
-        &--body {
-            display: none;
-        }
-
-        &.active {
-
-            .spoiler-one--head .icon {
-                transform: rotate(0deg);
-            }
-        }
-    }
-
-    .list {
-        margin-top: 25px;
-
-        &--item {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-            font-size: 14px;
-            line-height: 17px;
-
-            &:first-child {
-                margin-top: 0;
-            }
-
-            .text {
-
-                b,
-                strong {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .icon {
-            width: 17px;
-            height: 12px;
-            min-width: 13px;
-            margin-right: 10px;
-            fill: $yellow;
-        }
-
-        .hint {
-            margin-left: 10px;
-
-            .icon {
-                width: 16px;
-                height: 16px;
-            }
-        }
-    }
-}
-
 .payment-block {
     margin-top: 37px;
 }
@@ -1076,6 +1172,7 @@
     &--item {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         margin-top: 20px;
         cursor: pointer;
 

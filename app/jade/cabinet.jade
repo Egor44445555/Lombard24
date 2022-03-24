@@ -6,7 +6,7 @@ html
         include ./blocks/header.jade
 
         .wrapper
-            .alert-block.text-center.text-white(style="background-image: url(../images/alert-bg.png)") Добро пожаловать в личный кабинет, Александр Александров!
+            .alert-block.text-center.text-white.mt-4.mt-lg-0(style="background-image: url(../images/alert-bg.png)") Добро пожаловать в личный кабинет, Александр Александров!
 
             .container-block
                 .cabinet-block
@@ -27,15 +27,15 @@ html
                                         use(xlink:href="#icon-arrow-angle-bold")
 
                             .settings-list--item-body.spoiler--body
-                                .treaties-spoiler
-                                    .treaties-spoiler--item
-                                        .treaties-spoiler--head
+                                .gray-block-spoiler
+                                    .gray-block-spoiler--item
+                                        .gray-block-spoiler--head
                                             .treaties-list
                                                 label(for="radio4").treaties-list--item
                                                     .image
                                                         svg(class="icon-pen")
                                                             use(xlink:href="#icon-pen")
-                                                    .text Договор&nbsp;
+                                                    .text Договор
                                                         b 123694
                                                     input(type="radio" id="radio4" name="checkbox")
                                                     .icon
@@ -43,7 +43,7 @@ html
                                                     .image
                                                         svg(class="icon-calendar")
                                                             use(xlink:href="#icon-calendar")
-                                                    .text Заключен&nbsp;
+                                                    .text Заключен
                                                         b 02.02.22 г
                                                     input(type="radio" id="radio5" name="checkbox")
                                                     .icon
@@ -51,7 +51,7 @@ html
                                                     .image
                                                         svg(class="icon-clock-circle")
                                                             use(xlink:href="#icon-clock-circle")
-                                                    .text Срок договора&nbsp;
+                                                    .text Срок договора
                                                         b 02.01.23 г
                                                     input(type="radio" id="radio6" name="checkbox")
                                                     .icon
@@ -59,7 +59,7 @@ html
                                                     .image
                                                         svg(class="icon-euro")
                                                             use(xlink:href="#icon-euro")
-                                                    .text Получено&nbsp;
+                                                    .text Получено
                                                         b 125€
                                                     input(type="radio" id="radio7" name="checkbox")
                                                     .icon
@@ -67,7 +67,7 @@ html
                                                     .image
                                                         svg(class="icon-clock-extended")
                                                             use(xlink:href="#icon-clock-extended")
-                                                    .text Цена продления&nbsp;
+                                                    .text Цена продления
                                                         b 20€
                                                     input(type="radio" id="radio8" name="checkbox")
                                                     .icon
@@ -75,16 +75,16 @@ html
                                                     .image
                                                         svg(class="icon-price-extended")
                                                             use(xlink:href="#icon-price-extended")
-                                                    .text Цена выкупа&nbsp;
+                                                    .text Цена выкупа
                                                         b 135€
                                                     input(type="radio" id="radio9" name="checkbox")
                                                     .icon
 
-                                            .treaties-list-arrow
+                                            .gray-block-arrow
                                                 svg(class="icon-arrow-angle-bold")
                                                     use(xlink:href="#icon-arrow-angle-bold")
 
-                                        .treaties-spoiler--body
+                                        .gray-block-spoiler--body
                                             .inner-settings-list
                                                 .inner-settings-list--item
                                                     .inner-settings-list--head
@@ -98,13 +98,13 @@ html
                                                         .postponement-block
                                                             .label.semibold Выберите желаемую дату отсрочки:
 
-                                                            .d-flex.align-items-center.mt-3.pt-1
+                                                            .d-block.d-sm-flex.align-items-center.mt-3.pt-1
                                                                 .datepicker-wrap
                                                                     input.datepicker(type="text" name="date" placeholder="Выберите дату" autocomplete='off')
                                                                     svg(class="icon icon-calendar")
                                                                         use(xlink:href="#icon-calendar")
-                                                                .btn.btn-yellow Пересчитать
-                                                                a(href="#").text Сообщите нам, если хотите получить отсрочку на на более длительный срок
+                                                                .btn.btn-yellow.mt-2.mt-sm-0 Пересчитать
+                                                                a(href="#").d-block.text.mt-2.mt-sm-0 Сообщите нам, если хотите получить отсрочку на на более длительный срок
 
                                                 .inner-settings-list--item
                                                     .inner-settings-list--head
@@ -121,17 +121,17 @@ html
                                                                 label(for="radio10").radio
                                                                     input(type="radio" name="deadline" id="radio10")
                                                                     .icon
-                                                                    .text 7 дней&nbsp;
+                                                                    .text 7 дней
                                                                         b (5€)
                                                                 label(for="radio11").radio
                                                                     input(type="radio" name="deadline" id="radio11")
                                                                     .icon
-                                                                    .text 14 дней&nbsp;
+                                                                    .text 14 дней
                                                                         b (4€)
                                                                 label(for="radio12").radio
                                                                     input(type="radio" name="deadline" id="radio12")
                                                                     .icon
-                                                                    .text 30 дней&nbsp;
+                                                                    .text 30 дней
                                                                         b (10€)
 
                                                             .info-text Внимание! Вы продлеваете договор на следующий период.
@@ -155,7 +155,7 @@ html
                                                                         .list--item
                                                                             svg(class="icon icon-check-2")
                                                                                 use(xlink:href="#icon-check-2")
-                                                                            .text Комиссия&nbsp;
+                                                                            .text Комиссия
                                                                                 b 10€
                                                                             .hint
                                                                                 svg(class="icon icon-question")
@@ -165,7 +165,7 @@ html
                                                                         .list--item
                                                                             svg(class="icon icon-check-2")
                                                                                 use(xlink:href="#icon-check-2")
-                                                                            .text Стоимость хранинения товара за опоздание&nbsp;
+                                                                            .text Стоимость хранинения товара за опоздание
                                                                                 b 28€
                                                                             .hint
                                                                                 svg(class="icon icon-question")
@@ -201,6 +201,59 @@ html
                                                     .inner-settings-list--body
                                                         .semibold Выберите желаемую дату отсрочки:
 
+                                                        .total-cost
+                                                            .label К оплате:
+                                                            .cost 38€
+                                                            .hint
+                                                                svg(class="icon icon-question")
+                                                                    use(xlink:href="#icon-question")
+                                                                .tooltip Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                                                        .spoiler-one
+                                                            .spoiler-one--head
+                                                                .text Узнать что входит в цену
+                                                                svg(class="icon icon-arrow-angle")
+                                                                    use(xlink:href="#icon-arrow-angle")
+                                                            .spoiler-one--body
+                                                                .list
+                                                                    .list--item
+                                                                        svg(class="icon icon-check-2")
+                                                                            use(xlink:href="#icon-check-2")
+                                                                        .text Комиссия&nbsp;
+                                                                            b 10€
+                                                                        .hint
+                                                                            svg(class="icon icon-question")
+                                                                                use(xlink:href="#icon-question")
+                                                                            .tooltip Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                                                                    .list--item
+                                                                        svg(class="icon icon-check-2")
+                                                                            use(xlink:href="#icon-check-2")
+                                                                        .text Стоимость хранинения товара за опоздание&nbsp;
+                                                                            b 28€
+                                                                        .hint
+                                                                            svg(class="icon icon-question")
+                                                                                use(xlink:href="#icon-question")
+                                                                            .tooltip Стоимость хранения товара после окончания основного договора за 14 дополнительных дней&nbsp;
+                                                                                br
+                                                                                b (31.01.2022-13.02.2022)
+
+                                                        .payment-block
+                                                            .label.semibold Выберите способ оплаты:
+
+                                                            .payment-list
+                                                                label(for="pay-card-2").payment-list--item
+                                                                    input(type="checkbox" id="pay-card-2" checked)
+                                                                    .icon
+                                                                    .text Банковская карта
+                                                                    .cards-list
+                                                                        .cards-list--item
+                                                                            img(src="../images/visa.png")
+                                                                        .cards-list--item
+                                                                            img(src="../images/mastercard.png")
+
+                                                        button(type="submit").btn.btn-yellow.mt-3 Оплатить
+
                                             .text-end
                                                 a(href="#").download Скачать PDF файл договора
 
@@ -217,7 +270,24 @@ html
                                     svg(class="icon-arrow-angle-bold")
                                         use(xlink:href="#icon-arrow-angle-bold")
 
-                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            .settings-list--item-body.spoiler--body
+                                .gray-block
+                                    .input-wrap
+                                        .label.semibold Выберите номер договора
+                                        select(placeholder=" ").custom-select
+                                            option(value="250") 250
+                                            option(value="480") 480
+
+                                    .postponement-block.mt-3.pt-1
+                                        .label.semibold Выберите желаемую дату отсрочки:
+
+                                        .d-block.d-sm-flex.align-items-center.mt-3.pt-1
+                                            .datepicker-wrap
+                                                input.datepicker(type="text" name="date" placeholder="Выберите дату" autocomplete='off')
+                                                svg(class="icon icon-calendar")
+                                                    use(xlink:href="#icon-calendar")
+                                            .btn.btn-yellow.mt-2.mt-sm-0 Пересчитать
+                                            a(href="#").d-block.text.mt-2.mt-sm-0 Сообщите нам, если хотите получить отсрочку на на более длительный срок
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
@@ -245,7 +315,91 @@ html
                                     svg(class="icon-arrow-angle-bold")
                                         use(xlink:href="#icon-arrow-angle-bold")
 
-                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            .settings-list--item-body.spoiler--body
+                                .gray-block
+                                    .input-wrap
+                                        .label.semibold Выберите номер договора
+                                        select(placeholder=" ").custom-select
+                                            option(value="250") 250
+                                            option(value="480") 480
+
+                                    .renew-contract-block.mt-3.pt-2
+                                        .label.semibold Выберите на какой срок хотите продлить договор:
+                                        .radio-list
+                                            label(for="radio13").radio
+                                                input(type="radio" name="deadline" id="radio13")
+                                                .icon
+                                                .text 7 дней
+                                                    b (5€)
+                                            label(for="radio14").radio
+                                                input(type="radio" name="deadline" id="radio14")
+                                                .icon
+                                                .text 14 дней
+                                                    b (4€)
+                                            label(for="radio15").radio
+                                                input(type="radio" name="deadline" id="radio15")
+                                                .icon
+                                                .text 30 дней
+                                                    b (10€)
+
+                                        .info-text Внимание! Вы продлеваете договор на следующий период.
+                                            | Сумма оплаты продления (5€) с Вас спишется в следующем месяце.
+
+                                        .total-cost
+                                            .label К оплате:
+                                            .cost 38€
+                                            .hint
+                                                svg(class="icon icon-question")
+                                                    use(xlink:href="#icon-question")
+                                                .tooltip Стоимость хранения товара после окончания основного договора за 14 дополнительных дней&nbsp;
+                                                    br
+                                                    b (31.01.2022-13.02.2022)
+
+                                        .spoiler-one
+                                            .spoiler-one--head
+                                                .text Узнать что входит в цену
+                                                svg(class="icon icon-arrow-angle")
+                                                    use(xlink:href="#icon-arrow-angle")
+                                            .spoiler-one--body
+                                                .list
+                                                    .list--item
+                                                        svg(class="icon icon-check-2")
+                                                            use(xlink:href="#icon-check-2")
+                                                        .text Комиссия
+                                                            b 10€
+                                                        .hint
+                                                            svg(class="icon icon-question")
+                                                                use(xlink:href="#icon-question")
+                                                            .tooltip Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                                                    .list--item
+                                                        svg(class="icon icon-check-2")
+                                                            use(xlink:href="#icon-check-2")
+                                                        .text Стоимость хранинения товара за опоздание
+                                                            b 28€
+                                                        .hint
+                                                            svg(class="icon icon-question")
+                                                                use(xlink:href="#icon-question")
+                                                            .tooltip Стоимость хранения товара после окончания основного договора за 14 дополнительных дней&nbsp;
+                                                                br
+                                                                b (31.01.2022-13.02.2022)
+
+                                        .payment-block
+                                            .label.semibold Выберите способ оплаты:
+
+                                            .payment-list
+                                                label(for="pay-card-3").payment-list--item
+                                                    input(type="checkbox" id="pay-card-3" checked)
+                                                    .icon
+                                                    .text Банковская карта
+                                                    .cards-list
+                                                        .cards-list--item
+                                                            img(src="../images/visa.png")
+                                                        .cards-list--item
+                                                            img(src="../images/mastercard.png")
+
+                                        button(type="submit").btn.btn-yellow.mt-3 Оплатить
+
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
@@ -273,7 +427,33 @@ html
                                     svg(class="icon-arrow-angle-bold")
                                         use(xlink:href="#icon-arrow-angle-bold")
 
-                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            .settings-list--item-body.spoiler--body
+                                .gray-block
+                                    .input-wrap
+                                        .label.semibold Выберите номер договора
+                                        select(placeholder=" ").custom-select
+                                            option(value="250") 250
+                                            option(value="480") 480
+
+                                    .total-cost
+                                        .label Стоимость выкупа залога:
+                                        .cost 135€
+
+                                    .payment-block
+                                        .label.semibold Выберите способ оплаты:
+
+                                        .payment-list
+                                            label(for="pay-card-4" class="payment-list--item")
+                                                input(type="checkbox" id="pay-card-4" checked="checked")
+                                                .icon
+                                                .text Банковская карта
+                                                .cards-list
+                                                    .cards-list--item
+                                                        img(src="../images/visa.png")
+                                                    .cards-list--item
+                                                        img(src="../images/mastercard.png")
+
+                                    button(type="submit" class="btn btn-yellow mt-3") Оплатить
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
@@ -293,15 +473,108 @@ html
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.black
-                                    svg(class="icon-terminate-fill")
-                                        use(xlink:href="#icon-terminate-fill")
+                                    svg(class="icon-terminate")
+                                        use(xlink:href="#icon-terminate")
                                 .text
-                                    .title Отказаться от залога раньше времени
+                                    .title Рассторгнуть договор
+                                    .description Отказаться от залога раньше времени
                                 .arrow
                                     svg(class="icon-arrow-angle-bold")
                                         use(xlink:href="#icon-arrow-angle-bold")
 
-                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        .settings-list--item.spoiler--item
+                            .settings-list--item-head.spoiler--head
+                                .icon.blue-light
+                                    svg(class="icon-contact")
+                                        use(xlink:href="#icon-contact")
+                                .text
+                                    .title Контактная информация
+                                    .description Изменить, добавить и прочее
+                                .arrow
+                                    svg(class="icon-arrow-angle-bold")
+                                        use(xlink:href="#icon-arrow-angle-bold")
+
+                            .settings-list--item-body.spoiler--body
+                                .gray-block-spoiler.contacts
+                                    .gray-block-spoiler--item
+                                        .gray-block-spoiler--head
+                                            .title
+                                                svg(class="icon icon-smartphone")
+                                                    use(xlink:href="#icon-smartphone")
+                                                .text.semibold Номер телефона
+                                                .description Телефон для оповещений и вход в личный кабинет
+
+                                            .gray-block-arrow
+                                                svg(class="icon-arrow-angle-bold")
+                                                    use(xlink:href="#icon-arrow-angle-bold")
+
+                                        .gray-block-spoiler--body
+                                            .input-wrap
+                                                .label Ваш номер телефона
+                                                .edit-input-wrap
+                                                    input.input(type="text" placeholder="+7 (999) 888-77-66")
+                                                    .edit
+                                                        svg(class="icon icon-pen")
+                                                            use(xlink:href="#icon-pen")
+                                                        .text Изменить
+                                            label(for="agreement").agreement
+                                                input(type="checkbox" name="agreement" id="agreement")
+                                                .icon
+                                                    svg(class="icon-check")
+                                                        use(xlink:href="#icon-check")
+                                                .text Даю согласие на обработку персональных данных
+
+                                    .gray-block-spoiler--item
+                                        .gray-block-spoiler--head
+                                            .title
+                                                svg(class="icon icon-email")
+                                                    use(xlink:href="#icon-email")
+                                                .text.semibold Электронная почта
+                                                .description Почта для оповещений, рассылок, хороших предложений
+
+                                            .gray-block-arrow
+                                                svg(class="icon-arrow-angle-bold")
+                                                    use(xlink:href="#icon-arrow-angle-bold")
+
+                                        .gray-block-spoiler--body
+                                            .input-wrap
+                                                .label Ваш e-mail
+                                                .edit-input-wrap
+                                                    input.input(type="email" placeholder="lombard24@yandex.ru")
+                                                    .edit
+                                                        svg(class="icon icon-pen")
+                                                            use(xlink:href="#icon-pen")
+                                                        .text Изменить
+                                            label(for="agreement2").agreement
+                                                input(type="checkbox" name="agreement" id="agreement2")
+                                                .icon
+                                                    svg(class="icon-check")
+                                                        use(xlink:href="#icon-check")
+                                                .text Хочу получать рассылку, уведомления, хорошие предложения
+
+                                    .gray-block-spoiler--item
+                                        .gray-block-spoiler--head
+                                            .title
+                                                svg(class="icon icon-location-stroke")
+                                                    use(xlink:href="#icon-location-stroke")
+                                                .text.semibold Адрес
+                                                .description Ваш фактический адрес проживания
+
+                                            .gray-block-arrow
+                                                svg(class="icon-arrow-angle-bold")
+                                                    use(xlink:href="#icon-arrow-angle-bold")
+
+                                        .gray-block-spoiler--body
+                                            .input-wrap
+                                                .label Ваш адрес
+                                                .edit-input-wrap
+                                                    input.location-input(type="text" value="г. Таллин, ул. Центральная д1 кв24")
+                                                    .edit
+                                                        svg(class="icon icon-pen")
+                                                            use(xlink:href="#icon-pen")
+                                                        .text Изменить
 
 
         include ./blocks/footer.jade

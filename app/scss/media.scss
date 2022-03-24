@@ -120,6 +120,15 @@
             right: calc(50% - 575px);
         }
     }
+
+
+    /*** Cabinet ***/
+
+    .treaties-list--item {
+        max-width: 50%;
+    }
+
+    /*** End Cabinet ***/
 }
 
 /******************************************************************/
@@ -182,6 +191,23 @@
             }
         }
     }
+
+
+    /*** Cabinet ***/
+
+    .cabinet-block {
+        margin-top: 30px;
+    }
+
+    .settings-list {
+        margin-top: 20px;
+
+        &--item {
+            max-width: calc(100% - 14px);
+        }
+    }
+
+    /*** End Cabinet ***/
 }
 
 /******************************************************************/
@@ -409,6 +435,139 @@
     .modal-content {
         padding: 40px 20px;
     }
+
+
+    /*** Cabinet ***/
+
+    .settings-list {
+        margin-top: 20px;
+
+        &--item {
+            max-width: calc(100% - 14px);
+        }
+
+        &--item-head {
+            flex-wrap: wrap;
+            padding: 20px;
+
+            .icon {
+                width: 60px;
+                height: 60px;
+                min-width: 60px;
+                margin: 0 0 10px;
+                border-radius: 10px;
+            }
+
+            .text {
+                flex: calc(100% - 50px);
+            }
+
+            .title {
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .arrow {
+                margin: 0 0 0 10px;
+            }
+        }
+
+        &--item-body {
+            padding: 0 20px 20px;
+        }
+
+        .gray-block {
+            padding: 20px;
+        }
+
+        .total-cost {
+            display: block;
+
+            .label {
+                margin: 0 0 10px;
+            }
+        }
+
+        .contacts {
+
+            .gray-block-spoiler--head {
+
+                .title {
+
+                    .icon {
+                        margin: 0 0 10px;
+                    }
+
+                    .text {
+                        flex: 100%;
+                    }
+
+                    .description {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .gray-block-spoiler--body {
+                padding-left: 0;
+            }
+
+            .edit-input-wrap {
+                display: block;
+
+                .edit {
+                    margin: 20px 0 0;
+                }
+            }
+        }
+    }
+
+    .treaties-list {
+
+        &--item {
+            display: block;
+            max-width: 100%;
+        }
+
+        .image {
+            margin: 0 0 10px;
+        }
+
+        .icon {
+            margin: 10px 0 0;
+        }
+    }
+
+    .inner-settings-list--head {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .gray-block-spoiler {
+
+        &--item {
+            padding: 20px;
+        }
+
+        .download {
+            margin-top: 30px;
+        }
+    }
+
+    .payment-list {
+
+        .cards-list {
+            flex: 100%;
+            margin: 0 0 0 -10px;
+        }
+    }
+
+    /*** End Cabinet ***/
 }
 
 /******************************************************************/
