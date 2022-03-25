@@ -506,14 +506,22 @@ input[type="password"] {
         &::before {
             opacity: 1;
         }
+
+        svg {
+            opacity: 1;
+        }
     }
 
     .icon {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 20px;
         min-width: 20px;
         height: 20px;
-        background: $gray;
+        background: $white;
+        border: 1px solid $borderColor;
         border-radius: 3px;
         cursor: pointer;
 
@@ -527,6 +535,13 @@ input[type="password"] {
             height: 12px;
             background: $themeColor;
             border-radius: 2px;
+            opacity: 0;
+        }
+
+        svg {
+            width: 10px;
+            height: 9px;
+            fill: $white;
             opacity: 0;
         }
     }
@@ -980,11 +995,11 @@ select {
 }
 
 .swiper-button-next {
-    right: -8px;
+    right: 0;
 }
 
 .swiper-button-prev {
-    left: -8px;
+    left: 0;
 }
 
 /*** End Swiper ***/

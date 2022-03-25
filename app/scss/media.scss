@@ -129,6 +129,41 @@
     }
 
     /*** End Cabinet ***/
+
+
+    /*** Cart ***/
+
+    .cart-title {
+        padding: 15px;
+    }
+
+    .cart-list {
+
+        &--item {
+            padding: 15px;
+        }
+
+        .checkbox {
+            margin-top: 0;
+        }
+
+        .image {
+            width: 80px;
+            height: 80px;
+            max-width: 80px;
+            margin-left: 10px;
+        }
+
+        .location {
+            margin-left: 20px;
+        }
+
+        .remove {
+            margin-top: 0;
+        }
+    }
+
+    /*** End Cart ***/
 }
 
 /******************************************************************/
@@ -378,6 +413,67 @@
             min-width: 48px;
         }
     }
+
+
+    /*** Cart ***/
+
+    .cart-list {
+
+        &--item {
+            padding: 50px 20px 15px 20px;
+        }
+
+        .checkbox {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .remove {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .image {
+            flex: 100%;
+            width: 126px;
+            height: 126px;
+            max-width: 126px;
+            margin: 0;
+        }
+
+        .title {
+            flex: 100%;
+            max-width: 100%;
+            padding: 15px 0 0;
+        }
+
+        .location {
+            flex: 100%;
+            max-width: 100%;
+            margin: 15px 0 0;
+        }
+
+        .price-wrap {
+            flex: 100%;
+            justify-content: flex-start;
+            margin: 15px 0 0;
+            padding: 0;
+            text-align: left;
+        }
+    }
+
+    .total-block {
+        padding: 20px;
+
+        .delivery-description {
+            padding: 20px;
+            font-size: 14px;
+        }
+    }
+
+    /*** End Cart ***/
 }
 
 /******************************************************************/

@@ -239,30 +239,125 @@ header.header
     .container-block
         .wrap
             .modal-menu.js-custom-scroll.categories
-                .collections-list--item.categories--item(data-tab='1')
-                    a.link(href='#')
-                        span.text Text
-                    .arrow(data-tab='#')
-                        svg.icon-arrow
-                            use(xlink:href='#icon-arrow')
-                .collections-list.subcollection-list.if.or.collection_active
-                    .collections-list--item.subcollection-list--item.categories--item(data-tab='1')
+                .collections-list
+                    .collections-list--item
                         a.link(href='#')
-                            span.text Text
-                        .arrow(data-tab='1')
+                            svg(class="icon icon-computer")
+                                use(xlink:href="#icon-computer")
+                            span.text Компьютеры и ноутбуки
+                        .arrow(data-tab='Компьютеры и ноутбуки')
                             svg.icon-arrow
                                 use(xlink:href='#icon-arrow')
-            .modal-menu.js-custom-scroll.categories
-                .collections-list--item.categories--item(data-tab='2')
-                    a.link(href='#')
-                        span.text Text
-                    .arrow(data-tab='#')
-                        svg.icon-arrow
-                            use(xlink:href='#icon-arrow')
-                .collections-list.subcollection-list.if.or.collection_active
-                    .collections-list--item.subcollection-list--item.categories--item(data-tab='2')
+                    .collections-list--item
                         a.link(href='#')
-                            span.text Text
-                        .arrow(data-tab='1')
+                            svg(class="icon icon-smartphones")
+                                use(xlink:href="#icon-smartphones")
+                            span.text Телефоны и планшеты
+                        .arrow(data-tab='Телефоны и планшеты')
                             svg.icon-arrow
                                 use(xlink:href='#icon-arrow')
+                    .collections-list--item
+                        a.link(href='#')
+                            svg(class="icon icon-diamond")
+                                use(xlink:href="#icon-diamond")
+                            span.text Ювелирные украшения
+                        .arrow(data-tab='Компьютеры и ноутбуки')
+                            svg.icon-arrow
+                                use(xlink:href='#icon-arrow')
+                    .collections-list--item
+                        a.link(href='#')
+                            svg(class="icon icon-clock")
+                                use(xlink:href="#icon-clock")
+                            span.text ЧАСЫ
+                        .arrow(data-tab='Компьютеры и ноутбуки')
+                            svg.icon-arrow
+                                use(xlink:href='#icon-arrow')
+                    .collections-list--item
+                        a.link(href='#')
+                            svg(class="icon icon-photos")
+                                use(xlink:href="#icon-photos")
+                            span.text Фото и аксессуары
+                        .arrow(data-tab='Компьютеры и ноутбуки')
+                            svg.icon-arrow
+                                use(xlink:href='#icon-arrow')
+                    .collections-list--item
+                        a.link(href='#')
+                            svg(class="icon icon-audio")
+                                use(xlink:href="#icon-audio")
+                            span.text Аудио и видео
+                        .arrow(data-tab='Компьютеры и ноутбуки')
+                            svg.icon-arrow
+                                use(xlink:href='#icon-arrow')
+                    .collections-list--item
+                        a.link(href='#')
+                            svg(class="icon icon-star")
+                                use(xlink:href="#icon-star")
+                            span.text Остальное
+                        .arrow(data-tab='Компьютеры и ноутбуки')
+                            svg.icon-arrow
+                                use(xlink:href='#icon-arrow')
+
+            .main-menu-modal.js-custom-scroll.subcategories(data-tab="Компьютеры и ноутбуки")
+                .container-block
+                    .main-menu-modal-list-wrap
+                        .main-menu-modal-list
+                            a(href="#").main-menu-modal-list--title По бренду
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+
+                        .main-menu-modal-list
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+
+                        .main-menu-modal-list
+                            a(href="#").main-menu-modal-list--title По модели
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+
+                        .main-menu-modal-list
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+
+                        a(href="#").banner-menu
+                            span.marker IN PERFECT CONDITION
+                            img(src="../images/assets/banner-menu.jpg")
+                            span.title
+                                span новые поступления компьютеров и ноутбуков
+
+            .main-menu-modal.js-custom-scroll.subcategories(data-tab="Телефоны и планшеты")
+                .container-block
+                    .main-menu-modal-list-wrap
+                        .main-menu-modal-list
+                            a(href="#").main-menu-modal-list--title По бренду
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359
+                            a(href="#").main-menu-modal-list--item Model 1e35oi
+                            a(href="#").main-menu-modal-list--item Model 2359i3
+                            a(href="#").main-menu-modal-list--item Mode 3e5io35i
+                            a(href="#").main-menu-modal-list--item Model 4338359

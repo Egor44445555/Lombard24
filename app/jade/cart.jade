@@ -1,0 +1,233 @@
+html
+    title Корзина
+    include ./blocks/head.jade
+
+    body.main-page
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="/").breadcrumbs--item Главная
+                    span.breadcrumbs--item Корзина
+
+                .cart-block
+                    .row.mt-3.pt-3
+                        .col-12.col-lg-8.col-xl-9
+                            .cart-title
+                                .d-flex.align-items-center
+                                    h3 Корзина
+                                    .count-cart.ps-4.pe-0.mt-2 2 товара
+
+                                .d-md-flex.justify-content-between.mt-4
+                                    label(for="select-all").select-all
+                                        input(type="checkbox" id="select-all")
+                                        .icon
+                                            svg(class="icon-check")
+                                                use(xlink:href="#icon-check")
+                                        .text Выбрать все
+
+                                    .remove-all.mt-4.mt-md-0(data-remove-cart-select)
+                                        .text Удалить выбранное
+                                        svg(class="icon icon-trash")
+                                            use(xlink:href="#icon-trash")
+
+                            .cart-list
+                                .cart-list--item
+                                    label(for="1").checkbox
+                                        input(type="checkbox" id="1")
+                                        .icon
+                                            svg(class="icon-check")
+                                                use(xlink:href="#icon-check")
+                                    .image
+                                        img(src="../images/assets/product-item.jpg")
+
+                                    .title Platinet wireless headset Sport PM1085
+
+                                    .location
+                                        svg(class="icon icon-location-stroke")
+                                            use(xlink:href="#icon-location-stroke")
+                                        .text Забрать данный товар вы можете по адресу Põhja-Tallinn
+
+                                    .price-wrap
+                                        .price
+                                            .old-price 120€
+                                            .current-price 70€
+
+                                    .remove(data-remove-product-cart)
+                                        svg(class="icon icon-trash")
+                                            use(xlink:href="#icon-trash")
+
+                                .cart-list--item
+                                    label(for="2").checkbox
+                                        input(type="checkbox" id="2")
+                                        .icon
+                                            svg(class="icon-check")
+                                                use(xlink:href="#icon-check")
+
+                                    .image
+                                        img(src="../images/assets/product-item.jpg")
+
+                                    .title Platinet wireless headset Sport PM1085
+
+                                    .location
+                                        svg(class="icon icon-location-stroke")
+                                            use(xlink:href="#icon-location-stroke")
+                                        .text Забрать данный товар вы можете по адресу Põhja-Tallinn
+
+                                    .price-wrap
+                                        .price
+                                            .old-price 200€
+                                            .current-price 120€
+
+                                    .remove(data-remove-product-cart)
+                                        svg(class="icon icon-trash")
+                                            use(xlink:href="#icon-trash")
+
+
+                            h3.mt-3.pt-4.mt-lg-5 Может, что-то еще?
+
+                            .similar-products.mt-2.pt-4.mt-lg-4.js-slider-list
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        form(action="#").product-item
+                                            .marker.green NEW
+
+                                            .image
+                                                img(src="../images/assets/product-item.jpg")
+                                            .title Platinet wireless headset Sport PM1085
+
+                                            .row.align-items-center
+                                                .col-6
+                                                    .availabel.text-nowrap в магазине
+                                                    .old-cost 120€
+                                                .col-6.position-relative
+                                                    .cost 70€
+                                                    button.buy-btn Add to cart
+                                            .location
+                                                svg(class="icon icon-location-stroke")
+                                                    use(xlink:href="#icon-location-stroke")
+                                                .text Põhja-Tallinn
+                                    .swiper-slide
+                                        form(action="#").product-item
+                                            .marker.green NEW
+
+                                            .image
+                                                img(src="../images/assets/product-item.jpg")
+                                            .title Platinet wireless headset Sport PM1085
+
+                                            .row.align-items-center
+                                                .col-6
+                                                    .availabel.text-nowrap в магазине
+                                                    .old-cost 120€
+                                                .col-6.position-relative
+                                                    .cost 70€
+                                                    button.buy-btn Add to cart
+                                            .location
+                                                svg(class="icon icon-location-stroke")
+                                                    use(xlink:href="#icon-location-stroke")
+                                                .text Põhja-Tallinn
+                                    .swiper-slide
+                                        form(action="#").product-item
+                                            .marker.green NEW
+
+                                            .image
+                                                img(src="../images/assets/product-item.jpg")
+                                            .title Platinet wireless headset Sport PM1085
+
+                                            .row.align-items-center
+                                                .col-6
+                                                    .availabel.text-nowrap в магазине
+                                                    .old-cost 120€
+                                                .col-6.position-relative
+                                                    .cost 70€
+                                                    button.buy-btn Add to cart
+                                            .location
+                                                svg(class="icon icon-location-stroke")
+                                                    use(xlink:href="#icon-location-stroke")
+                                                .text Põhja-Tallinn
+                                    .swiper-slide
+                                        form(action="#").product-item
+                                            .marker.green NEW
+
+                                            .image
+                                                img(src="../images/assets/product-item.jpg")
+                                            .title Platinet wireless headset Sport PM1085
+
+                                            .row.align-items-center
+                                                .col-6
+                                                    .availabel.text-nowrap в магазине
+                                                    .old-cost 120€
+                                                .col-6.position-relative
+                                                    .cost 70€
+                                                    button.buy-btn Add to cart
+                                            .location
+                                                svg(class="icon icon-location-stroke")
+                                                    use(xlink:href="#icon-location-stroke")
+                                                .text Põhja-Tallinn
+                                    .swiper-slide
+                                        form(action="#").product-item
+                                            .marker.green NEW
+
+                                            .image
+                                                img(src="../images/assets/product-item.jpg")
+                                            .title Platinet wireless headset Sport PM1085
+
+                                            .row.align-items-center
+                                                .col-6
+                                                    .availabel.text-nowrap в магазине
+                                                    .old-cost 120€
+                                                .col-6.position-relative
+                                                    .cost 70€
+                                                    button.buy-btn Add to cart
+                                            .location
+                                                svg(class="icon icon-location-stroke")
+                                                    use(xlink:href="#icon-location-stroke")
+                                                .text Põhja-Tallinn
+
+                                .swiper-button-next
+                                .swiper-button-prev
+
+
+                        .col-12.col-lg-4.col-xl-3
+                            .total-block
+                                .delivery-description Available addresses and opening hours of pickup points can be selected when placing an order.
+
+                                h4.title Order Summary
+                                .total-list
+                                    .total-list--item
+                                        .label 2 items:
+                                        .value 190€
+                                    .total-list--item
+                                        .label You save:
+                                        .value.discount -130€ (70%)
+
+                                    .total-list--item.total
+                                        .label Total:
+                                        .value 190€
+
+                                a(href="#").btn.btn-green Перейти к оформлению заказа
+
+                            .banners.small.mt-4.pt-2
+                                .wrap
+                                    a(href="#" style="background-image: url('../images/assets/banner-green.jpg')").banners--item.text-white
+                                        span.title Продать вещи и получить деньги
+                                        span.btn.btn-white.link
+                                            span.text Узнать как
+                                            svg(class="icon icon-arrow")
+                                                use(xlink:href="#icon-arrow")
+                                    a(href="#" style="background-image: url('../images/assets/banner.jpg')").banners--item
+                                        span.title Заложить вещи и получить деньги
+                                        span.btn.btn-white.link
+                                            span.text Узнать как
+                                            svg(class="icon icon-arrow")
+                                                use(xlink:href="#icon-arrow")
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
+
+
+
+
+

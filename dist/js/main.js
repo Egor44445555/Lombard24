@@ -56,6 +56,38 @@ $(document).ready(function() {
         mobileMenu.removeClass('open');
     });
 
+    $('[data-remove-cart-select]').on("click", function(e) {
+        e.preventDefault();
+
+        $('.cart-list--item').each(function () {
+
+            if ($(this).find('.checkbox input')[0].checked) {
+                $(this).remove();
+            }
+        });
+    });
+
+    $('[data-remove-product-cart]').on("click", function(e) {
+        e.preventDefault();
+
+        $(this).parents('.cart-list--item').remove();
+    });
+
+    $('.select-all input').on('change', function () {
+
+        if ($(this)[0].checked) {
+
+            $('.cart-list--item').each(function () {
+                $(this).find('.checkbox input')[0].checked = true;
+            });
+        } else {
+
+            $('.cart-list--item').each(function () {
+                $(this).find('.checkbox input')[0].checked = false;
+            });
+        }
+    });
+
     $('.fancybox').fancybox();
 
     tooltip.tooltip({

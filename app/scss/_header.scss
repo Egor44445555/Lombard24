@@ -487,10 +487,6 @@
 }
 
 .modal-menu-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     position: fixed;
     top: 0;
     left: 0;
@@ -524,6 +520,118 @@
 
         &--item {
             width: 100%;
+        }
+    }
+
+    .title-wrap {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+
+        .back-catalog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: $green;
+
+            .icon {
+                fill: $white;
+                transform: rotate(180deg);
+            }
+        }
+
+        .title {
+            padding: 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .close {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: $green;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                fill: $white;
+            }
+        }
+    }
+
+    .modal-menu {
+        max-height: calc(100vh - 110px);
+        margin-top: 30px;
+    }
+
+    .main-menu-modal {
+        width: 100%;
+        height: calc(100vh - 50px);
+        top: 50px;
+        left: 0;
+        background: $white;
+        z-index: 999;
+    }
+
+    .main-menu-modal-list-wrap {
+
+        .main-menu-modal-list {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .banner-menu {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    .collections-list {
+
+        &--item {
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .text {
+            font-family: $font-base-bold;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: $black;
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -669,6 +777,7 @@
 
 
 /*** Mobile menu ***/
+
 .mobile-menu-wrap {
     position: fixed;
     top: 0;
@@ -717,7 +826,7 @@
         max-width: 70%;
 
         img {
-            height: 60px;
+            height: 50px;
         }
     }
 
@@ -725,8 +834,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         background: $green;
         cursor: pointer;
 
@@ -747,7 +856,7 @@
     }
 
     .js-custom-scroll {
-        max-height: calc(100vh - 200px);
+        max-height: calc(100vh - 180px);
         margin-top: 20px;
     }
 
@@ -789,6 +898,17 @@
         }
     }
 }
+
+.modal-menu .collections-list {
+
+    &--item {
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+    }
+}
+
+/*** End Mobile menu ***/
 
 
 /*** Media ***/
