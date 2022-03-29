@@ -16,6 +16,9 @@ $(document).ready(function() {
     let modalMenu = $('.modal-menu-wrap');
     let modalMenuClose = $('.modal-menu-wrap .close');
     let gridBtn = $('.grid-type--item');
+    let characteristicsList = $('.characteristics-list');
+    let characteristicsItem = $('.characteristics-list--item');
+    let characteristicsMoreBtn = $('.characteristics-list .more-btn');
 
     catalogBtn.on('click', function (e) {
         e.preventDefault();
@@ -89,6 +92,18 @@ $(document).ready(function() {
             });
         }
     });
+
+
+    if (characteristicsList[0] && characteristicsItem.length < 3) {
+        characteristicsMoreBtn.hide();
+    } else {
+        characteristicsList.addClass('hide-more');
+    }
+
+    characteristicsMoreBtn.on('click', function () {
+        characteristicsList.toggleClass('open');
+    });
+
 
     $('.fancybox').fancybox();
 
@@ -570,7 +585,7 @@ $(document).ready(function() {
     $('.custom-select').each(function () {
         let classes = $(this).attr('class');
         let template = '<div class="' + classes + '">';
-        template += '<span class="custom-select-trigger">' + $(this).attr('placeholder') + '<svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg></span>';
+        template += '<span class="custom-select-trigger"><span>' + $(this).attr('placeholder') + '</span><svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg></span>';
         
         template += '<div class="custom-options">';
         $(this).find('option')
@@ -615,10 +630,7 @@ $(document).ready(function() {
         let valueSelect = $(this).find('.text').text();
         let template = '';
 
-        template +=
-            '<span class="wrap">' +
-                '<span class="text">' + valueSelect + '<svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg></span></span>' +
-            '</span>'
+        template += '<span>' + valueSelect + '</span><svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg>'
 
         $(this).parents('.custom-select-wrapper').find('select').val(valueSelect);
         $(this).parents('.custom-options').find('.custom-option').removeClass('selection');
@@ -626,5 +638,42 @@ $(document).ready(function() {
         $(this).parents('.custom-select').removeClass('opened');
         $(this).parents('.custom-select').find('.custom-select-trigger').html(template).addClass('added');
     });
-});
 
+
+    /*** Count numbers ***/
+
+    let time = 2,
+        count = 1;
+
+    $(window).scroll(function() {
+        $('.percent-status').each(function() {
+            let position = $(this).offset().top,
+                topWindow = $(window).scrollTop();
+
+            if (position < topWindow + 400) {
+
+                if (count < 2) {
+
+                    $('div').each(function() {
+                        let i = 1,
+                            num = $(this).data('num'),
+                            step = 1000 * time / num,
+                            that = $(this).find('span'),
+                            int = setInterval(function() {
+
+                                if (i <= num) {
+                                    that.html(i + '%');
+                                } else {
+                                    count = count + 2;
+                                    clearInterval(int);
+                                }
+                                i++;
+                            }, step);
+                    });
+                }
+            }
+        });
+    });
+
+    /*** End Count numbers ***/
+});
