@@ -412,6 +412,24 @@
 
     .characteristics-list {
         margin-top: 20px;
+
+        &.hide-more {
+
+            &.open {
+
+                .characteristics-list--item:nth-child(n+3) {
+                    display: flex;
+                }
+
+                .more-btn:after {
+                    transform: rotate(-180deg);
+                }
+            }
+
+            .characteristics-list--item:nth-child(n+3) {
+                display: none;
+            }
+        }
     }
 }
 

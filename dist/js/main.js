@@ -10,6 +10,7 @@ $(document).ready(function() {
     let overflow = $('.overflow');
     let cartModal = $('.cart-modal');
     let cartBtn = $('.icon-list--item.cart');
+    let backCatalogBtn = $('.back-catalog');
     let mobileMenu = $('.mobile-menu-wrap');
     let catalogBtn = $('.catalog-btn');
     let modalMenu = $('.modal-menu-wrap');
@@ -38,6 +39,7 @@ $(document).ready(function() {
         mobileMenu.removeClass('open');
         _html.removeClass('noscroll');
         body.removeClass('noscroll');
+        overflow .removeClass('active');
 
         return false
     });
@@ -225,6 +227,7 @@ $(document).ready(function() {
         }
     });
 
+
     /*** Tabs ***/
 
     $('.tabs-head--item').on("click", function() {
@@ -238,6 +241,9 @@ $(document).ready(function() {
 
         content.addClass('active');
     });
+
+    let categoryItemArrow = $('.modal-menu-wrap .collections-list--item .arrow');
+    let categoryItemTitle = $('.modal-menu-wrap .title-wrap .title');
 
     function categoryTab(item, event) {
         let id = item.attr('data-tab'),
@@ -259,8 +265,28 @@ $(document).ready(function() {
         overflow.addClass('active');
     }
 
+    categoryItemArrow.on("click", function () {
+        categoryItemTitle.text($(this).data('tab'));
+        backCatalogBtn.addClass('catalog-active');
+        categoryTab($(this), 'click');
+    });
+
     categoryItem.on('click', function () {
         categoryTab($(this), 'hover');
+    });
+
+    backCatalogBtn.on('click', function (e) {
+        e.preventDefault();
+
+        if (backCatalogBtn.hasClass('catalog-active')) {
+            backCatalogBtn.removeClass('catalog-active');
+            categoryItemBody.removeClass('active');
+            categoryItemTitle.text('Каталог товаров');
+        } else {
+            modalMenu.removeClass('open');
+        }
+
+        return false
     });
 
     categoryItemBody.mouseleave(function () {

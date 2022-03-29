@@ -746,6 +746,13 @@ select {
     cursor: pointer;
     z-index: 9;
 
+    span {
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
     .icon {
         position: absolute;
         top: 50%;

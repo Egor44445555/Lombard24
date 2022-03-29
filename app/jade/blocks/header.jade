@@ -34,7 +34,7 @@ header.header
     .container-block
         .wrap.d-flex.align-items-center.flex-wrap.justify-content-between
             a(href="/").logo
-                img(src="/images/logo.svg")
+                img(src="images/logo.svg")
 
             .menu-btn.d-flex.d-lg-none.align-items-center.flex-column.js-mobile-menu-btn
                 span
@@ -148,7 +148,7 @@ header.header
 
                     a(href="#").banner-menu
                         span.marker IN PERFECT CONDITION
-                        img(src="../images/assets/banner-menu.jpg")
+                        img(src="images/assets/banner-menu.jpg")
                         span.title
                             span новые поступления компьютеров и ноутбуков
 
@@ -177,7 +177,7 @@ header.header
     .cart-product-list
         .cart-product-list--item
             .image
-                img(src="../images/assets/cart-product.jpg")
+                img(src="images/assets/cart-product.jpg")
             a(href="#").title Samsung Galaxy Watch 46mm
             .price 80€
             .remove
@@ -185,7 +185,7 @@ header.header
                     use(xlink:href="#icon-trash")
         .cart-product-list--item
             .image
-                img(src="../images/assets/cart-product.jpg")
+                img(src="images/assets/cart-product.jpg")
             a(href="#").title Samsung Galaxy J3 2016
             .price 70€
             .remove
@@ -200,8 +200,19 @@ header.header
         a(href="#").btn.btn-empty.btn-gray Оформить заказ
         a(href="#").btn.btn-green Перейти в корзину
 
-.overflow
+.mobile-phones.d-flex.d-md-none
+    .mobile-phones--item
+        a(href="#").phone
+            svg(class="icon icon-phone")
+                use(xlink:href="#icon-phone")
+            span.text + 372 58533330
+    .mobile-phones--item
+        a(href="#").phone
+            svg(class="icon icon-phone")
+                use(xlink:href="#icon-phone")
+            span.text + 372 58533332
 
+.overflow
 
 // mobile menu
 .mobile-menu-wrap
@@ -344,7 +355,7 @@ header.header
 
                         a(href="#").banner-menu
                             span.marker IN PERFECT CONDITION
-                            img(src="../images/assets/banner-menu.jpg")
+                            img(src="images/assets/banner-menu.jpg")
                             span.title
                                 span новые поступления компьютеров и ноутбуков
 

@@ -478,6 +478,42 @@
 
 /******************************************************************/
 
+@media (max-width: 576px) {
+
+    .sort-block {
+
+        .custom-select-trigger .icon {
+            right: 10px;
+        }
+    }
+
+    .page-size {
+        display: block;
+
+        .label {
+            margin: 0 0 10px;
+        }
+
+        .custom-select-wrapper {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .sort {
+        display: block;
+
+        .label {
+            margin: 0 0 10px;
+        }
+
+        .custom-select-wrapper {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
 @media (max-width: 561px) {
 
     .banners.medium {

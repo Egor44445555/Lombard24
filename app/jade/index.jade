@@ -9,14 +9,14 @@ html
             .container-block
                 .banners
                     .wrap
-                        a(href="#" style="background-image: url('../images/assets/banner.jpg')").banners--item
+                        a(href="#" style="background-image: url('images/assets/banner.jpg')").banners--item
                             span.title Мы покупаем ваши вещи
                             span.description Подайте заявку на оценку и продажу ваших вещей
                             span.btn.btn-white.link
                                 span.text Узнать подробнее
                                 svg(class="icon icon-arrow")
                                     use(xlink:href="#icon-arrow")
-                        a(href="#" style="background-image: url('../images/assets/banner-green.jpg')").banners--item.text-white
+                        a(href="#" style="background-image: url('images/assets/banner-green.jpg')").banners--item.text-white
                             span.title Мы даем деньги под залог вещей
                             span.description Не надо идти в ломбард, чтобы узнать сколько денег мы можем Вам предложить
                             span.btn.btn-white.link
@@ -26,16 +26,16 @@ html
 
                 .percent-status
                     .percent-status--item
-                        .percent
-                            span 5%
+                        .percent(data-num="100")
+                            span 0%
                         .text Процент по займу на 7 календарных дней
                     .percent-status--item
-                        .percent
-                            span 8%
+                        .percent(data-num="49")
+                            span 0%
                         .text Процент по займу на 7 календарных дней
                     .percent-status--item
-                        .percent
-                            span 10%
+                        .percent(data-num="10")
+                            span 0%
                         .text Процент по займу на 7 календарных дней
 
             .benefits-wrap
@@ -88,14 +88,14 @@ html
                                         .grid-type--item(data-type="list")
                                             svg(class="icon icon-list")
                                                 use(xlink:href="#icon-list")
-                                .col-12.col-sm-3.col-xl-4.mt-3.mt-sm-0
+                                .col-6.col-sm-3.col-xl-4.mt-3.mt-sm-0
                                     .page-size
                                         .label Show
                                         select(placeholder="16").custom-select
                                             option(value="16") 16
                                             option(value="32") 32
 
-                                .col-12.col-sm-7.col-xl-4.mt-3.mt-sm-0
+                                .col-6.col-sm-7.col-xl-4.mt-3.mt-sm-0
                                     .sort.justify-content-start.justify-content-sm-end
                                         .label Sort by
                                         select(placeholder="Highter price").custom-select
@@ -115,7 +115,7 @@ html
                                 .marker IN GOOD CONDITION
 
                                 .image
-                                    img(src="../images/assets/product-item.jpg")
+                                    img(src="images/assets/product-item.jpg")
                                 .title JBL Xtreme 2
 
                                 .button-wrap.row.align-items-center
@@ -134,7 +134,7 @@ html
                                 .marker.purple IN PERFECT CONDITION
 
                                 .image
-                                    img(src="../images/assets/product-item.jpg")
+                                    img(src="images/assets/product-item.jpg")
                                 .title Samsung Galaxy J3 2016
 
                                 .button-wrap.row.align-items-center
@@ -153,7 +153,7 @@ html
                                 .marker.green NEW
 
                                 .image
-                                    img(src="../images/assets/product-item.jpg")
+                                    img(src="images/assets/product-item.jpg")
                                 .title Platinet wireless headset Sport PM1085
 
                                 .button-wrap.row.align-items-center
@@ -172,7 +172,7 @@ html
                                 .marker IN GOOD CONDITION
 
                                 .image
-                                    img(src="../images/assets/product-item.jpg")
+                                    img(src="images/assets/product-item.jpg")
                                 .title JBL Xtreme 2
 
                                 .button-wrap.row.align-items-center
@@ -191,7 +191,7 @@ html
                                 .marker.purple IN PERFECT CONDITION
 
                                 .image
-                                    img(src="../images/assets/product-item.jpg")
+                                    img(src="images/assets/product-item.jpg")
                                 .title Samsung Galaxy J3 2016
 
                                 .button-wrap.row.align-items-center
@@ -210,7 +210,7 @@ html
                                 .marker.green NEW
 
                                 .image
-                                    img(src="../images/assets/product-item.jpg")
+                                    img(src="images/assets/product-item.jpg")
                                 .title Platinet wireless headset Sport PM1085
 
                                 .button-wrap.row.align-items-center
@@ -225,7 +225,7 @@ html
                                         use(xlink:href="#icon-location-stroke")
                                     .text Põhja-Tallinn
 
-                        .pagination
+                        .pagination.justify-content-center.justify-content-lg-start
                             a(href="#").pagination--item.prev
                             a(href="#").pagination--item 1
                             span.pagination--item.active 2
@@ -248,7 +248,7 @@ html
                             a(href="#").pagination--item 19
                             a(href="#").pagination--item.next
 
-                .banner(style="background-image: url('../images/assets/banner-purple.jpg')")
+                .banner(style="background-image: url('images/assets/banner-purple.jpg')")
                     .title Никто не узнает!
                     .description We do not share collateral information with banks. And thus, it does not affect your credit history.
 
@@ -293,7 +293,7 @@ html
                     .row.align-items-end.flex-column-reverse.flex-lg-row
                         .col
                             .image
-                                img(src="../images/info-block.png")
+                                img(src="images/info-block.png")
                         .col
                             .info
                                 .sup-title no problem!
@@ -308,7 +308,7 @@ html
                     .blog-list.mt-4
                         a(href="#").blog-item
                             span.image
-                                img(src="../images/assets/blog-item.jpg")
+                                img(src="images/assets/blog-item.jpg")
                                 span.date 12.11.22
                             span.info
                                 span.title Lorem ipsum dolor
@@ -320,7 +320,7 @@ html
 
                         a(href="#").blog-item
                             span.image
-                                img(src="../images/assets/blog-item.jpg")
+                                img(src="images/assets/blog-item.jpg")
                                 span.date 12.11.22
                             span.info
                                 span.title Lorem ipsum dolor
@@ -332,7 +332,7 @@ html
 
                         a(href="#").blog-item
                             span.image
-                                img(src="../images/assets/blog-item.jpg")
+                                img(src="images/assets/blog-item.jpg")
                                 span.date 12.11.22
                             span.info
                                 span.title Lorem ipsum dolor
