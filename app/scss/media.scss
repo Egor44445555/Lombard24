@@ -516,6 +516,13 @@
 
 @media (max-width: 561px) {
 
+    .banners {
+
+        &--item {
+            padding-right: 50%;
+        }
+    }
+
     .banners.medium {
 
         .banners--item {
@@ -706,5 +713,17 @@
 
 @media (max-width: 426px) {
 
+    .banners {
+
+        &--item {
+            padding-right: 20px;
+            background: none;
+        }
+
+
+        &.small .title {
+            max-width: 100%;
+        }
+    }
 }
 
