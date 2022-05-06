@@ -23,30 +23,26 @@ html
                                     label(for="select-all").select-all
                                         input(type="checkbox" id="select-all")
                                         .icon
-                                            svg(class="icon-check")
-                                                use(xlink:href="#icon-check")
+                                            .icon.ico-check
                                         .text Выбрать все
 
                                     .remove-all.mt-4.mt-md-0(data-remove-cart-select)
                                         .text Удалить выбранное
-                                        svg(class="icon icon-trash")
-                                            use(xlink:href="#icon-trash")
+                                        .icon.ico-trash
 
                             .cart-list
                                 .cart-list--item
                                     label(for="1").checkbox
                                         input(type="checkbox" id="1")
                                         .icon
-                                            svg(class="icon-check")
-                                                use(xlink:href="#icon-check")
+                                            .icon.ico-check
                                     .image
                                         img(src="images/assets/product-item.jpg")
 
                                     .title Platinet wireless headset Sport PM1085
 
                                     .location
-                                        svg(class="icon icon-location-stroke")
-                                            use(xlink:href="#icon-location-stroke")
+                                        .icon.ico-location-stroke
                                         .text Забрать данный товар вы можете по адресу Põhja-Tallinn
 
                                     .price-wrap
@@ -55,15 +51,13 @@ html
                                             .current-price 70€
 
                                     .remove(data-remove-product-cart)
-                                        svg(class="icon icon-trash")
-                                            use(xlink:href="#icon-trash")
+                                        .icon.ico-trash
 
                                 .cart-list--item
                                     label(for="2").checkbox
                                         input(type="checkbox" id="2")
                                         .icon
-                                            svg(class="icon-check")
-                                                use(xlink:href="#icon-check")
+                                            .icon.ico-check
 
                                     .image
                                         img(src="images/assets/product-item.jpg")
@@ -71,8 +65,7 @@ html
                                     .title Platinet wireless headset Sport PM1085
 
                                     .location
-                                        svg(class="icon icon-location-stroke")
-                                            use(xlink:href="#icon-location-stroke")
+                                        .icon.ico-location-stroke
                                         .text Забрать данный товар вы можете по адресу Põhja-Tallinn
 
                                     .price-wrap
@@ -81,9 +74,7 @@ html
                                             .current-price 120€
 
                                     .remove(data-remove-product-cart)
-                                        svg(class="icon icon-trash")
-                                            use(xlink:href="#icon-trash")
-
+                                        .icon.ico-trash
 
                             h3.mt-3.pt-4.mt-lg-5 Может, что-то еще?
 
@@ -105,8 +96,7 @@ html
                                                     .cost 70€
                                                     button.buy-btn Add to cart
                                             .location
-                                                svg(class="icon icon-location-stroke")
-                                                    use(xlink:href="#icon-location-stroke")
+                                                .icon.ico-location-stroke
                                                 .text Põhja-Tallinn
                                     .swiper-slide
                                         form(action="#").product-item
@@ -124,8 +114,7 @@ html
                                                     .cost 70€
                                                     button.buy-btn Add to cart
                                             .location
-                                                svg(class="icon icon-location-stroke")
-                                                    use(xlink:href="#icon-location-stroke")
+                                                .icon.ico-location-stroke
                                                 .text Põhja-Tallinn
                                     .swiper-slide
                                         form(action="#").product-item
@@ -143,8 +132,7 @@ html
                                                     .cost 70€
                                                     button.buy-btn Add to cart
                                             .location
-                                                svg(class="icon icon-location-stroke")
-                                                    use(xlink:href="#icon-location-stroke")
+                                                .icon.ico-location-stroke
                                                 .text Põhja-Tallinn
                                     .swiper-slide
                                         form(action="#").product-item
@@ -162,8 +150,7 @@ html
                                                     .cost 70€
                                                     button.buy-btn Add to cart
                                             .location
-                                                svg(class="icon icon-location-stroke")
-                                                    use(xlink:href="#icon-location-stroke")
+                                                .icon.ico-location-stroke
                                                 .text Põhja-Tallinn
                                     .swiper-slide
                                         form(action="#").product-item
@@ -181,8 +168,7 @@ html
                                                     .cost 70€
                                                     button.buy-btn Add to cart
                                             .location
-                                                svg(class="icon icon-location-stroke")
-                                                    use(xlink:href="#icon-location-stroke")
+                                                .icon.ico-location-stroke
                                                 .text Põhja-Tallinn
 
                                 .swiper-button-next
@@ -214,14 +200,12 @@ html
                                         span.title Продать вещи и получить деньги
                                         span.btn.btn-white.link
                                             span.text Узнать как
-                                            svg(class="icon icon-arrow")
-                                                use(xlink:href="#icon-arrow")
+                                            .icon.ico-arrow
                                     a(href="#" style="background-image: url('images/assets/banner.jpg')").banners--item
                                         span.title Заложить вещи и получить деньги
                                         span.btn.btn-white.link
                                             span.text Узнать как
-                                            svg(class="icon icon-arrow")
-                                                use(xlink:href="#icon-arrow")
+                                            .icon.ico-arrow
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade

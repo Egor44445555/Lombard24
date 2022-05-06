@@ -13,21 +13,17 @@
                 .locations-list.d-flex.align-items-center.justify-content-end
                     .locations-list--item.d-flex.align-items-center.justify-content-end
                         a(href="#").location.d-flex.align-items-center
-                            svg(class="icon icon-location")
-                                use(xlink:href="#icon-location")
+                            span.icon.ico-location
                             span.text Maneezi 1, Tallinn
                         a(href="#").phone
-                            svg(class="icon icon-phone")
-                                use(xlink:href="#icon-phone")
+                            span.icon.ico-phone1
                             span.text + 372 58533330
                     .locations-list--item.d-flex.align-items-center.justify-content-end
                         a(href="#").location.d-flex.align-items-center
-                            svg(class="icon icon-location")
-                                use(xlink:href="#icon-location")
+                            span.icon.ico-location
                             span.text Kari 1, Tallinn
                         a(href="#").phone
-                            svg(class="icon icon-phone")
-                                use(xlink:href="#icon-phone")
+                            span.icon.ico-phone1
                             span.text + 372 58533332
 
 header.header
@@ -50,8 +46,7 @@ header.header
             form.search-block.d-none.d-lg-flex
                 input(type="text" placeholder="Поиск товаров")
                 button(type="submit")
-                    svg(class="icon icon-search")
-                        use(xlink:href="#icon-search")
+                    .icon.ico-search
 
             .icon-list.d-none.d-lg-flex
                 a(href="#").icon-list--item.language
@@ -59,46 +54,37 @@ header.header
                         img(src="/images/assets/flag.png")
                     .text RU
                 a(href="#").icon-list--item.cart
-                    svg(class="icon icon-cart")
-                        use(xlink:href="#icon-cart")
+                    .icon.ico-cart
                     .count 10
 
                 a(href="#").icon-list--item.login
                     .text Login
-                    svg(class="icon icon-login")
-                        use(xlink:href="#icon-login")
+                    .icon.ico-login
 
     .position-relative.d-none.d-lg-block
         .main-menu-wrap
             .container-block
                 .main-menu
                     a(href="#" data-tab="Компьютеры и ноутбуки").main-menu--item
-                        svg(class="icon icon-computer")
-                            use(xlink:href="#icon-computer")
+                        span.icon.ico-computer
                         span.text Компьютеры и ноутбуки
                     a(href="#" data-tab="Телефоны и планшеты").main-menu--item
-                        svg(class="icon icon-smartphones")
-                            use(xlink:href="#icon-smartphones")
+                        span.icon.ico-smartphones
                         span.text Телефоны и планшеты
                     a(href="#" data-tab="Компьютеры и ноутбуки").main-menu--item
-                        svg(class="icon icon-diamond")
-                            use(xlink:href="#icon-diamond")
+                        span.icon.ico-diamond
                         span.text Ювелирные украшения
                     a(href="#" data-tab="Компьютеры и ноутбуки").main-menu--item
-                        svg(class="icon icon-clock")
-                            use(xlink:href="#icon-clock")
+                        span.icon.ico-clock
                         span.text ЧАСЫ
                     a(href="#" data-tab="Компьютеры и ноутбуки").main-menu--item
-                        svg(class="icon icon-photos")
-                            use(xlink:href="#icon-photos")
+                        span.icon.ico-photos
                         span.text Фото и аксессуары
                     a(href="#" data-tab="Компьютеры и ноутбуки").main-menu--item
-                        svg(class="icon icon-audio")
-                            use(xlink:href="#icon-audio")
+                        span.icon.ico-audio
                         span.text Аудио и видео
                     a(href="#" data-tab="Компьютеры и ноутбуки").main-menu--item
-                        svg(class="icon icon-star")
-                            use(xlink:href="#icon-star")
+                        span.icon.ico-star
                         span.text Остальное
 
         .main-menu-modal(data-tab="Компьютеры и ноутбуки")
@@ -171,8 +157,7 @@ header.header
         .cart-count В корзине 2 товара
         .clear-btn
             .text Очистить корзину
-            svg(class="icon icon-cross")
-                use(xlink:href="#icon-cross")
+            .icon.ico-cross
 
     .cart-product-list
         .cart-product-list--item
@@ -181,16 +166,14 @@ header.header
             a(href="#").title Samsung Galaxy Watch 46mm
             .price 80€
             .remove
-                svg(class="icon icon-trash")
-                    use(xlink:href="#icon-trash")
+                .icon.ico-trash
         .cart-product-list--item
             .image
                 img(src="images/assets/cart-product.jpg")
             a(href="#").title Samsung Galaxy J3 2016
             .price 70€
             .remove
-                svg(class="icon icon-trash")
-                    use(xlink:href="#icon-trash")
+                .icon.ico-trash
 
     .total
         .label Итого:
@@ -203,13 +186,11 @@ header.header
 .mobile-phones.d-flex.d-md-none
     .mobile-phones--item
         a(href="#").phone
-            svg(class="icon icon-phone")
-                use(xlink:href="#icon-phone")
+            span.icon.ico-phone
             span.text + 372 58533330
     .mobile-phones--item
         a(href="#").phone
-            svg(class="icon icon-phone")
-                use(xlink:href="#icon-phone")
+            span.icon.ico-phone
             span.text + 372 58533332
 
 .overflow
@@ -222,13 +203,11 @@ header.header
             a.logo.d-block.d-xl-none(href='/')
                 img(src="images/logo.svg")
             .close
-                svg.icon.icon-cross
-                    use(xlink:href='#icon-cross')
+                .icon.ico-cross
         form.search-block
             input(type="text" placeholder="Поиск товаров")
             button(type="submit")
-                svg(class="icon icon-search")
-                    use(xlink:href="#icon-search")
+                .icon.ico-search
 
         .js-custom-scroll
             .main-menu-mobile
@@ -241,72 +220,56 @@ header.header
 .modal-menu-wrap
     .title-wrap
         .back-catalog
-            svg.icon.icon-arrow
-                use(xlink:href='#icon-arrow')
+            .icon.ico-arrow
         h4.title Каталог товаров
         .close
-            svg.icon.icon-cross
-                use(xlink:href='#icon-cross')
+            .icon.ico-cross
     .container-block
         .wrap
             .modal-menu.js-custom-scroll.categories
                 .collections-list
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-computer")
-                                use(xlink:href="#icon-computer")
+                            span.icon.ico-computer
                             span.text Компьютеры и ноутбуки
                         .arrow(data-tab='Компьютеры и ноутбуки')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-smartphones")
-                                use(xlink:href="#icon-smartphones")
+                            span.icon.ico-smartphones
                             span.text Телефоны и планшеты
                         .arrow(data-tab='Телефоны и планшеты')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-diamond")
-                                use(xlink:href="#icon-diamond")
+                            span.icon.ico-diamond
                             span.text Ювелирные украшения
                         .arrow(data-tab='Компьютеры и ноутбуки')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-clock")
-                                use(xlink:href="#icon-clock")
+                            span.icon.ico-clock
                             span.text ЧАСЫ
                         .arrow(data-tab='Компьютеры и ноутбуки')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-photos")
-                                use(xlink:href="#icon-photos")
+                            span.icon.ico-photos
                             span.text Фото и аксессуары
                         .arrow(data-tab='Компьютеры и ноутбуки')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-audio")
-                                use(xlink:href="#icon-audio")
+                            span.icon.ico-audio
                             span.text Аудио и видео
                         .arrow(data-tab='Компьютеры и ноутбуки')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
                     .collections-list--item
                         a.link(href='#')
-                            svg(class="icon icon-star")
-                                use(xlink:href="#icon-star")
+                            span.icon.ico-star
                             span.text Остальное
                         .arrow(data-tab='Компьютеры и ноутбуки')
-                            svg.icon-arrow
-                                use(xlink:href='#icon-arrow')
+                            span.icon.ico-arrow
 
             .main-menu-modal.js-custom-scroll.subcategories(data-tab="Компьютеры и ноутбуки")
                 .container-block

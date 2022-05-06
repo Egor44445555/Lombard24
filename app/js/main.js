@@ -585,7 +585,7 @@ $(document).ready(function() {
     $('.custom-select').each(function () {
         let classes = $(this).attr('class');
         let template = '<div class="' + classes + '">';
-        template += '<span class="custom-select-trigger"><span>' + $(this).attr('placeholder') + '</span><svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg></span>';
+        template += '<span class="custom-select-trigger"><span>' + $(this).attr('placeholder') + '</span><span class="icon ico-arrow-angle-bold"></span></span>';
         
         template += '<div class="custom-options">';
         $(this).find('option')
@@ -630,7 +630,7 @@ $(document).ready(function() {
         let valueSelect = $(this).find('.text').text();
         let template = '';
 
-        template += '<span>' + valueSelect + '</span><svg class="icon icon-arrow-angle-bold"><use xlink:href="#icon-arrow-angle-bold"></use></svg>'
+        template += '<span>' + valueSelect + '</span><span class="icon ico-arrow-angle-bold"></span>'
 
         $(this).parents('.custom-select-wrapper').find('select').val(valueSelect);
         $(this).parents('.custom-options').find('.custom-option').removeClass('selection');

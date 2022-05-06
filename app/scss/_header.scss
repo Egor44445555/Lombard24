@@ -17,6 +17,8 @@
         width: 13px;
         height: 16px;
         margin-right: 8px;
+        font-size: 16px;
+        color: $purple;
     }
 
     ul {
@@ -148,7 +150,11 @@
         }
 
         .icon {
-            fill: $black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $black;
+            font-size: 25px;
         }
 
         .text {
@@ -198,8 +204,7 @@
             background: none;
 
             .icon {
-                fill: $white;
-                stroke: $black;
+                color: $black;
             }
         }
     }
@@ -242,8 +247,8 @@
         .icon {
             width: 18px;
             height: 18px;
-            fill: $black;
-            stroke: $white;
+            font-size: 18px;
+            color: $white;
         }
     }
 }
@@ -279,10 +284,14 @@
     }
 
     .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         min-width: 30px;
         height: 30px;
         margin-right: 10px;
+        font-size: 120%;
     }
 
     .text {
@@ -533,6 +542,11 @@
         height: 32px;
         cursor: pointer;
         z-index: 99;
+
+        .icon:before {
+            font-size: 20px;
+            color: $white;
+        }
     }
 
     .menu-header {
@@ -560,7 +574,11 @@
             background: $green;
 
             .icon {
-                fill: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10px;
+                color: $white;
                 transform: rotate(180deg);
             }
         }
@@ -631,10 +649,21 @@
             }
         }
 
+        .link {
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 3px;
+        }
+
         .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 20px;
             height: 20px;
+            min-width: 20px;
             margin-right: 10px;
+            font-size: 20px;
         }
 
         .text {
@@ -649,9 +678,8 @@
             width: 20px;
             height: 20px;
 
-            svg {
-                width: 100%;
-                height: 100%;
+            .icon {
+                font-size: 6px;
             }
         }
     }
@@ -860,10 +888,14 @@
         background: $green;
         cursor: pointer;
 
-        svg {
+        .icon {
             width: 20px;
             height: 20px;
-            fill: $white;
+            font-size: 20px;
+
+            &:before {
+                color: $white;
+            }
         }
     }
 
@@ -873,6 +905,10 @@
 
         input[type="text"] {
             padding-left: 20px;
+        }
+
+        .icon {
+            color: $white;
         }
     }
 
@@ -1000,6 +1036,7 @@
             width: 20px;
             min-width: 20px;
             height: 20px;
+            font-size: 16px;
         }
 
         .text {
