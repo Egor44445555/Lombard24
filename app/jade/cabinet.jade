@@ -17,12 +17,12 @@ html
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon
-                                    span.icon.ico-treaties
+                                    span.ico-treaties
                                 .text
                                     .title Договоры
                                     .description Дата заключения и продления, срок действия и т.д
                                 .arrow
-                                    span.icon.ico-arrow-angle-bold
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body
                                 .gray-block-spoiler
@@ -31,42 +31,42 @@ html
                                             .treaties-list
                                                 label(for="radio4").treaties-list--item
                                                     .image
-                                                        span.icon.ico-pen
+                                                        span.ico-pen
                                                     .text Договор
                                                         b 123694
                                                     input(type="radio" id="radio4" name="checkbox")
                                                     .icon
                                                 label(for="radio5").treaties-list--item
                                                     .image
-                                                        span.icon.ico-calendar
+                                                        span.ico-calendar
                                                     .text Заключен
                                                         b 02.02.22 г
                                                     input(type="radio" id="radio5" name="checkbox")
                                                     .icon
                                                 label(for="radio6").treaties-list--item
                                                     .image
-                                                        span.icon.ico-clock-circle
+                                                        span.ico-clock-circle
                                                     .text Срок договора
                                                         b 02.01.23 г
                                                     input(type="radio" id="radio6" name="checkbox")
                                                     .icon
                                                 label(for="radio7").treaties-list--item
                                                     .image
-                                                        span.icon.ico-euro
+                                                        span.ico-euro
                                                     .text Получено
                                                         b 125€
                                                     input(type="radio" id="radio7" name="checkbox")
                                                     .icon
                                                 label(for="radio8").treaties-list--item
                                                     .image
-                                                        span.icon.ico-clock-extended
+                                                        span.ico-clock-extended
                                                     .text Цена продления
                                                         b 20€
                                                     input(type="radio" id="radio8" name="checkbox")
                                                     .icon
                                                 label(for="radio9").treaties-list--item
                                                     .image
-                                                        span.icon.ico-price-extended
+                                                        span.ico-price-extended
                                                     .text Цена выкупа
                                                         b 135€
                                                     input(type="radio" id="radio9" name="checkbox")
@@ -81,7 +81,7 @@ html
                                                     .inner-settings-list--head
                                                         span.icon.ico-bell
                                                         .text Сообщить об опоздании
-                                                        span.icon.ico-arrow-angle-bold
+                                                        span.arrow.ico-arrow-angle-bold
 
                                                     .inner-settings-list--body
                                                         .postponement-block
@@ -98,7 +98,7 @@ html
                                                     .inner-settings-list--head
                                                         span.icon.ico-clock-extended
                                                         .text Продлить договор
-                                                        span.icon.ico-arrow-angle-bold
+                                                        span.arrow.ico-arrow-angle-bold
 
                                                     .inner-settings-list--body
                                                         .renew-contract-block
@@ -172,9 +172,9 @@ html
 
                                                 .inner-settings-list--item
                                                     .inner-settings-list--head
-                                                        .icon.ico-price-extended
+                                                        span.icon.ico-price-extended
                                                         .text Выкупить залог
-                                                        .icon.ico-arrow-angle-bold
+                                                        span.arrow.ico-arrow-angle-bold
 
                                                     .inner-settings-list--body
                                                         .semibold Выберите желаемую дату отсрочки:
@@ -233,14 +233,12 @@ html
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.red
-                                    svg(class="icon-bell")
-                                        use(xlink:href="#icon-bell")
+                                    span.ico-bell
                                 .text
                                     .title Сообщить об опоздании
                                     .description Способы получения отсрочки
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body
                                 .gray-block
@@ -256,36 +254,31 @@ html
                                         .d-block.d-sm-flex.align-items-center.mt-3.pt-1
                                             .datepicker-wrap
                                                 input.datepicker(type="text" name="date" placeholder="Выберите дату" autocomplete='off')
-                                                svg(class="icon icon-calendar")
-                                                    use(xlink:href="#icon-calendar")
+                                                .icon.ico-calendar
                                             .btn.btn-yellow.mt-2.mt-sm-0 Пересчитать
                                             a(href="#").d-block.text.mt-2.mt-sm-0 Сообщите нам, если хотите получить отсрочку на на более длительный срок
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.green
-                                    svg(class="icon-scales")
-                                        use(xlink:href="#icon-scales")
+                                    span.ico-scales
                                 .text
                                     .title Заложить товар
                                     .description Не надо идти в ломбард, чтобы узнать сколько денег мы можем Вам предложить.
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.purple-dark
-                                    svg(class="icon-clock-extended")
-                                        use(xlink:href="#icon-clock-extended")
+                                    span.ico-clock-extended
                                 .text
                                     .title Продлить договор
                                     .description Вы можете продлить договор банковским переводом
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    .ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body
                                 .gray-block
@@ -321,8 +314,7 @@ html
                                             .label К оплате:
                                             .cost 38€
                                             .hint
-                                                svg(class="icon icon-question")
-                                                    use(xlink:href="#icon-question")
+                                                .icon.ico-question
                                                 .tooltip Стоимость хранения товара после окончания основного договора за 14 дополнительных дней&nbsp;
                                                     br
                                                     b (31.01.2022-13.02.2022)
@@ -330,28 +322,23 @@ html
                                         .spoiler-one
                                             .spoiler-one--head
                                                 .text Узнать что входит в цену
-                                                svg(class="icon icon-arrow-angle")
-                                                    use(xlink:href="#icon-arrow-angle")
+                                                .icon.ico-arrow-angle
                                             .spoiler-one--body
                                                 .list
                                                     .list--item
-                                                        svg(class="icon icon-check-2")
-                                                            use(xlink:href="#icon-check-2")
+                                                        span.icon.ico-check-2
                                                         .text Комиссия
                                                             b 10€
                                                         .hint
-                                                            svg(class="icon icon-question")
-                                                                use(xlink:href="#icon-question")
+                                                            .icon.ico-question
                                                             .tooltip Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
                                                     .list--item
-                                                        svg(class="icon icon-check-2")
-                                                            use(xlink:href="#icon-check-2")
+                                                        .icon.ico-check-2
                                                         .text Стоимость хранинения товара за опоздание
                                                             b 28€
                                                         .hint
-                                                            svg(class="icon icon-question")
-                                                                use(xlink:href="#icon-question")
+                                                            span.icon.ico-question
                                                             .tooltip Стоимость хранения товара после окончания основного договора за 14 дополнительных дней&nbsp;
                                                                 br
                                                                 b (31.01.2022-13.02.2022)
@@ -376,28 +363,24 @@ html
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.yellow
-                                    svg(class="icon-sale-bag")
-                                        use(xlink:href="#icon-sale-bag")
+                                    span.ico-sale-bag
                                 .text
                                     .title Продать товар
                                     .description Подайте заявку на оценку и продажу ваших вещей.
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.orange
-                                    svg(class="icon-price-extended")
-                                        use(xlink:href="#icon-price-extended")
+                                    span.ico-price-extended
                                 .text
                                     .title Выкупить залог
                                     .description Вы можете выкупить залог банковским переводом
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body
                                 .gray-block
@@ -430,57 +413,49 @@ html
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.purple
-                                    svg(class="icon-power-attorney")
-                                        use(xlink:href="#icon-power-attorney")
+                                    span.ico-power-attorney
                                 .text
                                     .title Оформить доверенность
                                     .description Если Вы не можете забрать залог самостоятельно, то Вы можете оформить
                                         | доверенность на другого человека.
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    .ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.black
-                                    svg(class="icon-terminate")
-                                        use(xlink:href="#icon-terminate")
+                                    span.ico-terminate
                                 .text
                                     .title Рассторгнуть договор
                                     .description Отказаться от залога раньше времени
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
                         .settings-list--item.spoiler--item
                             .settings-list--item-head.spoiler--head
                                 .icon.blue-light
-                                    svg(class="icon-contact")
-                                        use(xlink:href="#icon-contact")
+                                    span.ico-contact
                                 .text
                                     .title Контактная информация
                                     .description Изменить, добавить и прочее
                                 .arrow
-                                    svg(class="icon-arrow-angle-bold")
-                                        use(xlink:href="#icon-arrow-angle-bold")
+                                    span.ico-arrow-angle-bold
 
                             .settings-list--item-body.spoiler--body
                                 .gray-block-spoiler.contacts
                                     .gray-block-spoiler--item
                                         .gray-block-spoiler--head
                                             .title
-                                                svg(class="icon icon-smartphone")
-                                                    use(xlink:href="#icon-smartphone")
+                                                span.ico-smartphone
                                                 .text.semibold Номер телефона
                                                 .description Телефон для оповещений и вход в личный кабинет
 
                                             .gray-block-arrow
-                                                svg(class="icon-arrow-angle-bold")
-                                                    use(xlink:href="#icon-arrow-angle-bold")
+                                                span.ico-arrow-angle-bold
 
                                         .gray-block-spoiler--body
                                             .input-wrap
@@ -488,27 +463,23 @@ html
                                                 .edit-input-wrap
                                                     input.input(type="text" placeholder="+7 (999) 888-77-66")
                                                     .edit
-                                                        svg(class="icon icon-pen")
-                                                            use(xlink:href="#icon-pen")
+                                                        span.icon.ico-pen
                                                         .text Изменить
-                                            label(for="agreement").agreement
-                                                input(type="checkbox" name="agreement" id="agreement")
+                                            label(for="agreement1").agreement
+                                                input(type="checkbox" name="agreement" id="agreement1")
                                                 .icon
-                                                    svg(class="icon-check")
-                                                        use(xlink:href="#icon-check")
+                                                    span.ico-check
                                                 .text Даю согласие на обработку персональных данных
 
                                     .gray-block-spoiler--item
                                         .gray-block-spoiler--head
                                             .title
-                                                svg(class="icon icon-email")
-                                                    use(xlink:href="#icon-email")
+                                                span.ico-email
                                                 .text.semibold Электронная почта
                                                 .description Почта для оповещений, рассылок, хороших предложений
 
                                             .gray-block-arrow
-                                                svg(class="icon-arrow-angle-bold")
-                                                    use(xlink:href="#icon-arrow-angle-bold")
+                                                span.ico-arrow-angle-bold
 
                                         .gray-block-spoiler--body
                                             .input-wrap
@@ -516,27 +487,23 @@ html
                                                 .edit-input-wrap
                                                     input.input(type="email" placeholder="lombard24@yandex.ru")
                                                     .edit
-                                                        svg(class="icon icon-pen")
-                                                            use(xlink:href="#icon-pen")
+                                                        span.icon.ico-pen
                                                         .text Изменить
                                             label(for="agreement2").agreement
                                                 input(type="checkbox" name="agreement" id="agreement2")
                                                 .icon
-                                                    svg(class="icon-check")
-                                                        use(xlink:href="#icon-check")
+                                                    span.ico-check
                                                 .text Хочу получать рассылку, уведомления, хорошие предложения
 
                                     .gray-block-spoiler--item
                                         .gray-block-spoiler--head
                                             .title
-                                                svg(class="icon icon-location-stroke")
-                                                    use(xlink:href="#icon-location-stroke")
+                                                span.icon.ico-location-stroke
                                                 .text.semibold Адрес
                                                 .description Ваш фактический адрес проживания
 
                                             .gray-block-arrow
-                                                svg(class="icon-arrow-angle-bold")
-                                                    use(xlink:href="#icon-arrow-angle-bold")
+                                                span.ico-arrow-angle-bold
 
                                         .gray-block-spoiler--body
                                             .input-wrap
@@ -544,8 +511,7 @@ html
                                                 .edit-input-wrap
                                                     input.location-input(type="text" value="г. Таллин, ул. Центральная д1 кв24")
                                                     .edit
-                                                        svg(class="icon icon-pen")
-                                                            use(xlink:href="#icon-pen")
+                                                        span.icon.ico-pen
                                                         .text Изменить
 
 
