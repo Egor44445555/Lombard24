@@ -780,7 +780,7 @@ select {
         align-items: center;
         justify-content: center;
         transform: translateY(-50%);
-        width: 15px;
+        width: 20px;
         height: 12px;
         fill: none;
         stroke: $grayDarkIcon;
@@ -1248,6 +1248,17 @@ select {
 .ui-datepicker .ui-datepicker-next span:before {
     border-width: 4px 0 4px 8px;
     border-color: transparent transparent transparent $black;
+}
+
+.qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover,
+.qs-active {
+    background: $themeColor;
+    color: $white;
+}
+
+.qs-range-end,
+.qs-range-start {
+    background: $grayIcon;
 }
 
 .datepicker-wrap {

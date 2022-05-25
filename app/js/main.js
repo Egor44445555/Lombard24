@@ -182,51 +182,82 @@ $(document).ready(function() {
     });
 
 
-    /***/
+    /*** Datepicker ***/
 
-    $(".datepicker").datepicker({
-        dateFormat: 'dd.mm.y',
+    function dateFormatted(date) {
+        let day = ('0' + new Date(date).getDate()).slice(-2);
+        let month = ('0' + (new Date(date).getMonth() + 1)).slice(-2);
+        let year = new Date(date).getFullYear();
+
+        return day + '.' + month + '.' + year
+    }
+
+    $('[data-datepicker-index]').each(function () {
+
+        let id = $(this)[0].getAttribute('data-datepicker-index');
+
+        if (id) {
+
+            const picker = datepicker('#' + id, {
+
+                formatter: (input, date) => {
+                    input.value = dateFormatted(date)
+                },
+                overlayPlaceholder: 'Введите 4-значный год',
+                overlayButton: 'Подтвердить',
+                startDay: 1,
+                customDays: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                customMonths: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+            })
+        }
+
     });
 
-    $(".datepicker-from").datepicker({
-        defaultDate: "+1w",
-        dateFormat: 'dd.mm.y',
-        numberOfMonths: 1,
-        closeText: 'Закрыть',
-        prevText: 'Предыдущий',
-        nextText: 'Следующий',
-        currentText: 'Сегодня',
-        monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-        monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-        dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-        dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-        dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-        weekHeader: 'Не',
-        firstDay: 1,
-        isRTL: false,
-        showMonthAfterYear: false,
-        yearSuffix: ''
-    });
+    // $(".datepicker").datepicker({
+    //     dateFormat: 'dd.mm.y',
+    // });
+    //
+    // $(".datepicker-from").datepicker({
+    //     defaultDate: "+1w",
+    //     dateFormat: 'dd.mm.y',
+    //     numberOfMonths: 1,
+    //     closeText: 'Закрыть',
+    //     prevText: 'Предыдущий',
+    //     nextText: 'Следующий',
+    //     currentText: 'Сегодня',
+    //     monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    //     monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+    //     dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    //     dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+    //     dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    //     weekHeader: 'Не',
+    //     firstDay: 1,
+    //     isRTL: false,
+    //     showMonthAfterYear: false,
+    //     yearSuffix: ''
+    // });
+    //
+    // $(".datepicker-to").datepicker({
+    //         defaultDate: "+1w",
+    //         dateFormat: 'dd.mm.y',
+    //         numberOfMonths: 1,
+    //         closeText: 'Закрыть',
+    //         prevText: 'Предыдущий',
+    //         nextText: 'Следующий',
+    //         currentText: 'Сегодня',
+    //         monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    //         monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+    //         dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    //         dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+    //         dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    //         weekHeader: 'Не',
+    //         firstDay: 1,
+    //         isRTL: false,
+    //         showMonthAfterYear: false,
+    //         yearSuffix: ''
+    //     });
 
-    $(".datepicker-to").datepicker({
-            defaultDate: "+1w",
-            dateFormat: 'dd.mm.y',
-            numberOfMonths: 1,
-            closeText: 'Закрыть',
-            prevText: 'Предыдущий',
-            nextText: 'Следующий',
-            currentText: 'Сегодня',
-            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-            monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-            dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-            dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-            dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-            weekHeader: 'Не',
-            firstDay: 1,
-            isRTL: false,
-            showMonthAfterYear: false,
-            yearSuffix: ''
-        });
+    /*** End Datepicker ***/
 
 
     gridBtn.on("click", function(e) {
